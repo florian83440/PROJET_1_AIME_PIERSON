@@ -67,6 +67,9 @@ De plus, le joueur aura la possibilité de sauvegarder son score en saisissant s
 			<th>
 				Conditions
 			</th>
+			<th>
+				Débloque
+			</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -77,6 +80,9 @@ De plus, le joueur aura la possibilité de sauvegarder son score en saisissant s
 			<td>
 				Terminer le jeu en difficulté facile
 			</td>
+			<td>
+				A venir
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -84,6 +90,9 @@ De plus, le joueur aura la possibilité de sauvegarder son score en saisissant s
 			</td>
 			<td>
 				Terminer le jeu en difficulté facile sans se faire toucher
+			</td>
+			<td>
+				A venir
 			</td>
 		</tr>
 		<tr>
@@ -93,6 +102,9 @@ De plus, le joueur aura la possibilité de sauvegarder son score en saisissant s
 			<td>
 				Terminer le jeu en difficulté moyen
 			</td>
+			<td>
+				A venir
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -100,6 +112,9 @@ De plus, le joueur aura la possibilité de sauvegarder son score en saisissant s
 			</td>
 			<td>
 				Terminer le jeu en difficulté moyen sans se faire toucher
+			</td>
+			<td>
+				A venir
 			</td>
 		</tr>
 		<tr>
@@ -109,6 +124,9 @@ De plus, le joueur aura la possibilité de sauvegarder son score en saisissant s
 			<td>
 				Terminer le jeu en difficulté difficile
 			</td>
+			<td>
+				A venir
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -116,6 +134,9 @@ De plus, le joueur aura la possibilité de sauvegarder son score en saisissant s
 			</td>
 			<td>
 				Terminer le jeu en difficulté difficile sans se faire toucher
+			</td>
+			<td>
+				A venir
 			</td>
 		</tr>
 	</tbody>
