@@ -1,12 +1,20 @@
 <h1>Space Invaders Like (à notre sauce)</h1>
+<h2>Pourquoi ce jeu ?</h2> 
+
+Tout d'abord, car c'est un jeu auquel nous apprécions jouer aujourd'hui encore et qui est connu de tout le monde. Le principe est simple, survivre dans un champ d'astéroïdes et d'ennemis. Par ailleurs, ce jeu permet de travailler de nombreux points techniques : collisions, déplacement du vaisseau, tir du vaisseau, amélioration ou encore gestion des vies.
+
+<h2>Installation</h2> 
+
+Pour installer le jeu il suffit de télécharger le projet et d'ouvrir le fichier index.html.
+
 <h2>Règles du jeu</h2> 
 <h3>But du jeu</h3>
 
 <ul>
-  <li>Le but du jeu est de détruire les objets en provenance du haut de l’écran et de les éviter, il faut finir toutes les étapes d'un niveau pour le terminer.</li>
+  <li>Le but du jeu est de détruire les enemis en provenance du haut de l’écran et de les éviter, il faut finir toutes les étapes d'un niveau pour le terminer.</li>
 </ul>
 
-<h3>Comment jouer au jeu ?</h3>
+<h3>Comment jouer ?</h3>
 
 <ul>
   <li>Le joueur peut se déplacer dans toutes les directions avec pour limite la moitié de l’écran.</li>
@@ -14,8 +22,8 @@
   <li>
     <ul>
       <li>Le joueur possède une armure pouvant être détruite ou réparée (à l’aide des bonus).</li>
-      <li>Il possède 3 vies qu’il perd lorsqu’il n’a plus d’armure et qu’il est touché par un objet.</li>
-      <li>Une armure est détruite lorsqu’elle est touchée trop de fois par un objet.</li>
+      <li>Il possède 3 vies qu’il perd lorsqu’il n’a plus d’armure et qu’il est touché par un enemis ou un astéroide.</li>
+      <li>Une armure est détruite lorsqu’elle est touchée trop de fois par un enemis ou un astéroide.</li>
     </ul>
   </li>
 </ul>
@@ -28,9 +36,87 @@
  
 <li>
     <ul>
-      <li>En mode de jeu facile le nombre d'objets est faible et leur vitesse est lente.</li>
-      <li>En mode de jeu moyen, le nombre d'objets augmente et leur vitesse augmente un peu.</li>
-      <li>En mode difficile, les objets sont beaucoup plus nombreux et leur vitesse est aléatoire.</li>
+      <li>En mode de jeu facile le nombre d'énemis est faible et leur vitesse est lente.</li>
+      <li>En mode de jeu moyen, le nombre d'énemis augmente et leur vitesse augmente un peu.</li>
+      <li>En mode difficile, les énemis sont beaucoup plus nombreux et leur vitesse est aléatoire.</li>
     </ul>
   </li>
 </ul>
+
+<h3>Score</h3>
+
+Le score du joueur est calculé en fonction :
+
+<ul>
+	<li>Du nombre d'objets touché (ennemis ou astéroïdes)</li>
+	<li>Du nombre de vies perdues</li>
+	<li>De l'étape atteinte dans le niveau</li>
+	<li>Du niveau de difficulté</li>
+</ul>
+
+De plus, le joueur aura la possibilité de sauvegarder son score en saisissant son pseudo, un classement sera ainsi établi.
+
+<h3>Haut faits</h3>
+
+<table>
+	<thead>
+		<tr>
+			<th>
+				Haut Faits
+			</th>
+			<th>
+				Conditions
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				Petit joueur
+			</td>
+			<td>
+				Terminer le jeu en difficulté facile
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Ok pas mal
+			</td>
+			<td>
+				Terminer le jeu en difficulté facile sans se faire toucher
+			</td>
+		</tr>
+		<tr>
+			<td>
+				On passe la seconde !
+			</td>
+			<td>
+				Terminer le jeu en difficulté moyen
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Ni vu ni connu
+			</td>
+			<td>
+				Terminer le jeu en difficulté moyen sans se faire toucher
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Capitaine Kirk !
+			</td>
+			<td>
+				Terminer le jeu en difficulté difficile
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Faucon Millenium
+			</td>
+			<td>
+				Terminer le jeu en difficulté difficile sans se faire toucher
+			</td>
+		</tr>
+	</tbody>
+</table>
