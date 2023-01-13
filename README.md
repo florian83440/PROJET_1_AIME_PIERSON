@@ -18,8 +18,8 @@ Ce projet se divise en plusieurs parties :
 
 <h2>Qui sommes-nous ?</h2> 
 
-Nous sommes deux étudiants en L3 MIASHS parcours MIAGE.
-Florian : https://github.com/florian83440
+Nous sommes deux étudiants en L3 MIASHS parcours MIAGE.<br/>
+Florian : https://github.com/florian83440<br/>
 Thomas : https://github.com/CyberLifeDev-Thomas
 
 <h1>Space Invaders Like (à notre sauce)</h1>
