@@ -1,12 +1,19 @@
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![Bulma](https://img.shields.io/badge/bulma-00D0B1?style=for-the-badge&logo=bulma&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
 <h1>Description globale</h1>
 
-<h2>Qui sommes-nous ?</h2> 
+<h3>Qui sommes-nous ?</h3> 
 
 Nous sommes deux étudiants en L3 MIASHS parcours MIAGE.<br/>
 Florian : https://github.com/florian83440<br/>
 Thomas : https://github.com/CyberLifeDev-Thomas
 
-<h2>Le projet</h2> 
+<h3>Le projet</h3> 
 
 Ce projet à pour but de prendre en main les technologies Javascript, HTML5 et CSS3 en apssant par le developpement de jeux sur un interface web (navigateur). 
 Ce projet se divise en plusieurs parties :
@@ -22,16 +29,16 @@ Ce projet se divise en plusieurs parties :
   </li>
 </ul>
 
-<h2>Personas (à finir)</h2> 
+<h3>Personas (à finir)</h3> 
 https://docs.google.com/document/d/1sdVcxtwGHJ-xAalerZM2pFjRsA1_4oAy8uETlnxhZRI/edit?usp=sharing
 
-<h2>Scénarios (à finir)</h2> 
+<h3>Scénarios (à finir)</h3> 
 https://docs.google.com/document/d/1sdVcxtwGHJ-xAalerZM2pFjRsA1_4oAy8uETlnxhZRI/edit?usp=sharing
 
-<h2>Modèle de tâches (à finir)</h2> 
+<h3>Modèle de tâches (à finir)</h3> 
 https://docs.google.com/drawings/d/16n494zFeevA8Zl0ozoBWnEhSdNHZ9CU3Bvtnix-ID9k/edit?usp=sharing
 
-<h2>Fonctionalités</h2> 
+<h3>Fonctionalités</h3> 
 
 <ul>
 	<li>Page d'accueil proposant les différentes jeux et d'autres infos sur le projet</li>
@@ -40,23 +47,23 @@ https://docs.google.com/drawings/d/16n494zFeevA8Zl0ozoBWnEhSdNHZ9CU3Bvtnix-ID9k/
 	<li>Page de profil pour consulter ses scores et haut faits ainsi que de personaliser son profil</li>
 </ul>
 
-<h2>Installation</h2> 
+<h3>Installation</h3> 
 
 Pour jouer au différents jeux il suffit de télécharger le projet et d'ouvrir le fichier index.html. Dans la barre de navigation du site il y a un onglet "Jeux" qui se déroule et liste les jeux disponibles. Cliquer sur le nom d'un jeu permet d'y jouer.
 
 <h1>Space Invaders Like (à notre sauce)</h1>
-<h2>Pourquoi ce jeu ?</h2> 
+<h3>Pourquoi ce jeu ?</h3> 
 
 Tout d'abord, car c'est un jeu auquel nous apprécions jouer aujourd'hui encore et qui est connu de tout le monde. Le principe est simple, survivre dans un champ d'astéroïdes et d'ennemis. Par ailleurs, ce jeu permet de travailler de nombreux points techniques : collisions, déplacement du vaisseau, tir du vaisseau, amélioration ou encore gestion des vies.
 
-<h2>Règles du jeu</h2> 
-<h3>But du jeu</h3>
+<h3>Règles du jeu</h3> 
+<h4>But du jeu</h3>
 
 <ul>
   <li>Le but du jeu est de détruire les ennemis en provenance du haut de l’écran et de les éviter, il faut finir toutes les étapes d'un niveau pour le terminer.</li>
 </ul>
 
-<h3>Comment jouer ?</h3>
+<h4>Comment jouer ?</h4>
 
 <ul>
   <li>Le joueur peut se déplacer dans toutes les directions avec pour limite la moitié de l’écran.</li>
@@ -70,7 +77,7 @@ Tout d'abord, car c'est un jeu auquel nous apprécions jouer aujourd'hui encore 
   </li>
 </ul>
 
-<h3>Niveaux</h3>
+<h4>Niveaux</h4>
 
 <ul>
   <li>Le jeu possède 3 niveaux, facile, moyen, difficile.</li>
@@ -84,7 +91,7 @@ Tout d'abord, car c'est un jeu auquel nous apprécions jouer aujourd'hui encore 
   </li>
 </ul>
 
-<h3>Score</h3>
+<h4>Score</h4>
 
 Le score du joueur est calculé en fonction :
 
@@ -97,7 +104,7 @@ Le score du joueur est calculé en fonction :
 
 De plus, le joueur aura la possibilité de sauvegarder son score en saisissant son pseudo, un classement sera ainsi établi.
 
-<h3>Haut faits</h3>
+<h4>Haut faits</h4>
 
 <table>
 	<thead>
