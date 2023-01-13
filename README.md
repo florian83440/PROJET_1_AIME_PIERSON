@@ -22,11 +22,14 @@ Ce projet se divise en plusieurs parties :
   </li>
 </ul>
 
-<h2>Personas</h2> 
+<h2>Personas (à finir)</h2> 
 https://docs.google.com/document/d/1sdVcxtwGHJ-xAalerZM2pFjRsA1_4oAy8uETlnxhZRI/edit?usp=sharing
 
-<h2>Scénarios</h2> 
+<h2>Scénarios (à finir)</h2> 
 https://docs.google.com/document/d/1sdVcxtwGHJ-xAalerZM2pFjRsA1_4oAy8uETlnxhZRI/edit?usp=sharing
+
+<h2>Modèle de tâches (à finir)</h2> 
+https://docs.google.com/drawings/d/16n494zFeevA8Zl0ozoBWnEhSdNHZ9CU3Bvtnix-ID9k/edit?usp=sharing
 
 <h2>Fonctionalités</h2> 
 
