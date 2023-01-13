@@ -1,4 +1,11 @@
 <h1>Description globale</h1>
+
+<h2>Qui sommes-nous ?</h2> 
+
+Nous sommes deux étudiants en L3 MIASHS parcours MIAGE.<br/>
+Florian : https://github.com/florian83440<br/>
+Thomas : https://github.com/CyberLifeDev-Thomas
+
 <h2>Le projet</h2> 
 
 Ce projet à pour but de prendre en main les technologies Javascript, HTML5 et CSS3 en apssant par le developpement de jeux sur un interface web (navigateur). 
@@ -15,14 +22,16 @@ Ce projet se divise en plusieurs parties :
   </li>
 </ul>
 
+<h2>Fonctionalités</h2> 
 
-<h2>Qui sommes-nous ?</h2> 
+<ul>
+	<li>Page d'accueil proposant les différentes jeux et d'autres infos sur le projet</li>
+	<li>Possibilité de créer un compte et de se connecter pour sauvegarder son score et ses haut faits</li>
+	<li>Tableau de score pour chaque jeux avec les meilleurs joueurs</li>
+	<li>Page de profil pour consulter ses scores et haut faits ainsi que de personaliser son profil</li>
+</ul>
 
-Nous sommes deux étudiants en L3 MIASHS parcours MIAGE.<br/>
-Florian : https://github.com/florian83440<br/>
-Thomas : https://github.com/CyberLifeDev-Thomas
-
-<h2>Installation </h2> 
+<h2>Installation</h2> 
 
 Pour jouer au différents jeux il suffit de télécharger le projet et d'ouvrir le fichier index.html. Dans la barre de navigation du site il y a un onglet "Jeux" qui se déroule et liste les jeux disponibles. Cliquer sur le nom d'un jeu permet d'y jouer.
 
