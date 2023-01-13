@@ -1,3 +1,27 @@
+<h1>Description globale</h1>
+<h2>Le projet</h2> 
+
+Ce projet à pour but de prendre en main les technologies Javascript, HTML5 et CSS3 en apssant par le developpement de jeux sur un interface web (navigateur). 
+Ce projet se divise en plusieurs parties :
+
+<ul>
+  <li>Conception</li>
+  <li>Developpement</li>
+  <li>
+    <ul>
+      <li>Site web</li>
+      <li>Différents jeux</li>
+    </ul>
+  </li>
+</ul>
+
+
+<h2>Qui sommes-nous ?</h2> 
+
+Nous sommes deux étudiants en L3 MIASHS parcours MIAGE.
+Florian : https://github.com/florian83440
+Thomas : https://github.com/CyberLifeDev-Thomas
+
 <h1>Space Invaders Like (à notre sauce)</h1>
 <h2>Pourquoi ce jeu ?</h2> 
 
@@ -33,8 +57,7 @@ Pour installer le jeu il suffit de télécharger le projet et d'ouvrir le fichie
 <ul>
   <li>Le jeu possède 3 niveaux, facile, moyen, difficile.</li>
   <li>Une armure possède 5 ou 2 couches pour les niveaux facile et moyen, pour le niveau difficile le jour ne possède pas d’armure.</li>
- 
-<li>
+  <li>
     <ul>
       <li>En mode de jeu facile le nombre d'énemis est faible et leur vitesse est lente.</li>
       <li>En mode de jeu moyen, le nombre d'énemis augmente et leur vitesse augmente un peu.</li>
