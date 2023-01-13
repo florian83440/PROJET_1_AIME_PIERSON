@@ -22,6 +22,12 @@ Ce projet se divise en plusieurs parties :
   </li>
 </ul>
 
+<h2>Personas</h2> 
+https://docs.google.com/document/d/1sdVcxtwGHJ-xAalerZM2pFjRsA1_4oAy8uETlnxhZRI/edit?usp=sharing
+
+<h2>Scénarios</h2> 
+[https://docs.google.com/document/d/1sdVcxtwGHJ-xAalerZM2pFjRsA1_4oAy8uETlnxhZRI/edit?usp=sharing](https://docs.google.com/document/d/1uRTqgNI4uQThV_GxcM5RVeJ0VLyvaBjHJy1PJ1CRr1U/edit?usp=sharing)
+
 <h2>Fonctionalités</h2> 
 
 <ul>
