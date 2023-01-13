@@ -44,7 +44,7 @@ Tout d'abord, car c'est un jeu auquel nous apprécions jouer aujourd'hui encore 
 <h3>But du jeu</h3>
 
 <ul>
-  <li>Le but du jeu est de détruire les enemis en provenance du haut de l’écran et de les éviter, il faut finir toutes les étapes d'un niveau pour le terminer.</li>
+  <li>Le but du jeu est de détruire les ennemis en provenance du haut de l’écran et de les éviter, il faut finir toutes les étapes d'un niveau pour le terminer.</li>
 </ul>
 
 <h3>Comment jouer ?</h3>
@@ -55,8 +55,8 @@ Tout d'abord, car c'est un jeu auquel nous apprécions jouer aujourd'hui encore 
   <li>
     <ul>
       <li>Le joueur possède une armure pouvant être détruite ou réparée (à l’aide des bonus).</li>
-      <li>Il possède 3 vies qu’il perd lorsqu’il n’a plus d’armure et qu’il est touché par un enemis ou un astéroide.</li>
-      <li>Une armure est détruite lorsqu’elle est touchée trop de fois par un enemis ou un astéroide.</li>
+      <li>Il possède 3 vies qu’il perd lorsqu’il n’a plus d’armure et qu’il est touché par un ennemis ou un astéroide.</li>
+      <li>Une armure est détruite lorsqu’elle est touchée trop de fois par un ennemis ou un astéroide.</li>
     </ul>
   </li>
 </ul>
@@ -68,9 +68,9 @@ Tout d'abord, car c'est un jeu auquel nous apprécions jouer aujourd'hui encore 
   <li>Une armure possède 5 ou 2 couches pour les niveaux facile et moyen, pour le niveau difficile le jour ne possède pas d’armure.</li>
   <li>
     <ul>
-      <li>En mode de jeu facile le nombre d'énemis est faible et leur vitesse est lente.</li>
-      <li>En mode de jeu moyen, le nombre d'énemis augmente et leur vitesse augmente un peu.</li>
-      <li>En mode difficile, les énemis sont beaucoup plus nombreux et leur vitesse est aléatoire.</li>
+      <li>En mode de jeu facile le nombre d'ennemis est faible et leur vitesse est lente.</li>
+      <li>En mode de jeu moyen, le nombre d'ennemis augmente et leur vitesse augmente un peu.</li>
+      <li>En mode difficile, les ennemis sont beaucoup plus nombreux et leur vitesse est aléatoire.</li>
     </ul>
   </li>
 </ul>
