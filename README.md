@@ -22,14 +22,14 @@ Nous sommes deux étudiants en L3 MIASHS parcours MIAGE.<br/>
 Florian : https://github.com/florian83440<br/>
 Thomas : https://github.com/CyberLifeDev-Thomas
 
+<h2>Installation</h2> 
+
+Pour jouer au différents jeux il suffit de télécharger le projet et d'ouvrir le fichier index.html. Dans la barre de navigation du site il y a un onglet "Jeux" qui se déroule et liste les jeux disponibles. Cliquer sur le nom d'un jeu permet d'y jouer.
+
 <h1>Space Invaders Like (à notre sauce)</h1>
 <h2>Pourquoi ce jeu ?</h2> 
 
 Tout d'abord, car c'est un jeu auquel nous apprécions jouer aujourd'hui encore et qui est connu de tout le monde. Le principe est simple, survivre dans un champ d'astéroïdes et d'ennemis. Par ailleurs, ce jeu permet de travailler de nombreux points techniques : collisions, déplacement du vaisseau, tir du vaisseau, amélioration ou encore gestion des vies.
-
-<h2>Installation</h2> 
-
-Pour installer le jeu il suffit de télécharger le projet et d'ouvrir le fichier index.html.
 
 <h2>Règles du jeu</h2> 
 <h3>But du jeu</h3>
