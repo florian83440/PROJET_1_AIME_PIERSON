@@ -47,7 +47,7 @@ https://docs.google.com/drawings/d/16n494zFeevA8Zl0ozoBWnEhSdNHZ9CU3Bvtnix-ID9k/
 </ul>
 
 <h3>Musiques</h3> 
-Florian a créé plusieurs musiques qui seront lu pendant les jeux et peuvent être désactivé ou réduites/augmentées de volume via le menu pause des jeux.
+Nous avons produit plusieurs musiques qui seront lu pendant les jeux et peuvent être désactivé ou réduites/augmentées de volume via le menu pause des jeux.
 
 <h3>Installation</h3> 
 
