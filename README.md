@@ -46,6 +46,9 @@ https://docs.google.com/drawings/d/16n494zFeevA8Zl0ozoBWnEhSdNHZ9CU3Bvtnix-ID9k/
 	<li>Page de profil pour consulter ses scores et haut faits ainsi que de personaliser son profil</li>
 </ul>
 
+<h3>Musiques</h3> 
+Florian a créé plusieurs musiques qui seront lu pendant les jeux et peuvent être désactivé ou réduites/augmentées de volume via le menu pause des jeux.
+
 <h3>Installation</h3> 
 
 Pour jouer au différents jeux il suffit de télécharger le projet et d'ouvrir le fichier index.html. Dans la barre de navigation du site il y a un onglet "Jeux" qui se déroule et liste les jeux disponibles. Cliquer sur le nom d'un jeu permet d'y jouer.
