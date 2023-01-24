@@ -31,9 +31,18 @@ class scene {
         return true;
     }
 
+    settings() {
+        if($("canvas#snow").css("display") == "none") {
+            return false;
+        }
+        return true;
+    }
 
     showTab() { $("div.tab").show(); }
     hideTab() { $("div.tab").hide(); }
+
+    showSnow() { $("canvas#snow").show(); }
+    hideSnow() { $("canvas#snow").hide(); }
 
     showMenu() { $("div.menu").show(); }
     hideMenu() { $("div.menu").hide(); }
