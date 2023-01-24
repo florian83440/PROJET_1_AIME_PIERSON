@@ -29,7 +29,7 @@ Ce projet se divise en plusieurs parties :
   </li>
 </ul>
 
-<h3>Personas (à finir)</h3> 
+<h3>Personas</h3> 
 https://docs.google.com/document/d/1sdVcxtwGHJ-xAalerZM2pFjRsA1_4oAy8uETlnxhZRI/edit?usp=sharing
 
 <h3>Scénarios (à finir)</h3> 
@@ -191,3 +191,31 @@ De plus, le joueur aura la possibilité de sauvegarder son score en saisissant s
 		</tr>
 	</tbody>
 </table>
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>Pong (à notre sauce)</h1>
+<h3>Pourquoi ce jeu ?</h3> 
+
+<h3>Règles du jeu</h3> 
+<h4>But du jeu</h3>
+
+<h4>Comment jouer ?</h4>
+
+<h4>Niveaux</h4>
+
+<h4>Score</h4>
+
+<h4>Haut faits</h4>
+
+
+
