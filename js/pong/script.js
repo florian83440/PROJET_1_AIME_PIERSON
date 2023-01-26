@@ -7,7 +7,7 @@ $(document).ready(() => {
         console.log("visible");
     } else {}
 
-    $("body").keydown((e) => {
+    /*$("body").keydown((e) => {
 
         z = 90;
         s = 83;
@@ -43,7 +43,7 @@ $(document).ready(() => {
             }
         }
 
-    }); 
+    }); */
 
     $("input[type=button].button-element.return").click(() => {
         ctx.hideTab();

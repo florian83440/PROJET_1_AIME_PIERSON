@@ -4,19 +4,20 @@
         <script type="text/javascript" src="http://local.piersonthomas.fr/theme/files/JS/jquery-1.12.0.js"></script>
         <link rel="stylesheet" type="text/css" href="./../css/pong.css">
         <script type="text/javascript" src="./../js/pong/script.js"></script>
+        <script type="text/javascript" src="./../js/pong/class/canvas.js"></script>
         <script type="text/javascript" src="./../js/pong/class/player.js"></script>
         <script type="text/javascript" src="./../js/pong/class/scene.js"></script>
     </head>
 <body class="pong">
-    <canvas id="snow"></canvas>
-    <div class="menu">
+    <canvas id="snow" style="display: none;"></canvas>
+    <div class="menu" style="display: none;">
         <div class="game_title"><img src="https://store-images.s-microsoft.com/image/apps.58246.14366673839912084.10afbadd-9680-4014-82c7-01d75e20db82.d2766ae5-eccb-49b0-ac7c-318ac50660ca?q=90&w=480&h=270"></div>
         <div class="element">
             <input type="button" class="button-element play" value="play">
             <input type="button" class="button-element settings" value="settings">
         </div>
     </div>
-    <div class="settings">
+    <div class="settings" style="display: none;">
         <div class="element">
             <h1 class="title">settings</h1>
             <div class="element-text">
@@ -27,32 +28,9 @@
         </div>
     </div>
     <div class="game">
-        <div class="environment">
-            <div class="top-ligne"></div>
-            <div class="bottom-ligne"></div>
-            <div class="middle-ligne"></div>
-            <div class="middle-ligne"></div>
-            <div class="middle-ligne"></div>
-            <div class="middle-ligne"></div>
-            <div class="middle-ligne"></div>
-            <div class="middle-ligne"></div>
-            <div class="middle-ligne"></div>
-            <div class="middle-ligne"></div>
-            <div class="middle-ligne"></div>
-            <div class="middle-ligne"></div>
-            <div class="middle-ligne"></div>
-            <div class="middle-ligne"></div>
-            <div class="middle-ligne"></div>
-            <div class="middle-ligne"></div>
-            <div class="middle-ligne"></div>
-        </div>
-        <div class="player">
-            <div class="p player-one"></div>
-            <div class="p player-two"></div>
-        </div>
-
+        <canvas id="myCanvas"></canvas>
     </div>
-    <div class="tab">
+    <div class="tab" style="display: none;">
         <div class="background"></div>
         <div class="element">
             <h1 class="title">pause</h1>

@@ -3,7 +3,9 @@
     margin: 0;
     overflow: hidden;
 }
-
+.game {
+    display: block !important;
+}
 .title {
     color: white;
     text-align: center;
@@ -161,8 +163,12 @@ body, html{
     }
   }
   
-  canvas{
+  canvas#snow{
     background:#000;
     width:100%;
     height:100%;
   }
+  /*canvas#myCanvas {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+}*/
