@@ -237,9 +237,58 @@ Il s'agit d'un jeux qui à bercer entre guillement notre enfance, il s'agit d'un
 Le score du jeux est gérer par rapport à si la balle touche le coté droits ou le coté gauche.
 le point est attribué au joueur inverse au sens.
 
-La partie ce termine dès qu'un joueur atteint 10 point.
+La partie ce termine dès qu'un joueur atteint 10 points.
 
 <h4>Haut faits</h4>
 
-
-
+<table>
+	<thead>
+		<tr>
+			<th>
+				Haut Faits
+			</th>
+			<th>
+				Conditions
+			</th>
+			<th>
+				Débloque
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				L'assasin
+			</td>
+			<td>
+				Si le score est de 10:0 ou 0:10
+			</td>
+			<td>
+				A venir
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Le testeur
+			</td>
+			<td>
+				arriver à dépasser les 10 points de score (impossible)
+			</td>
+			<td>
+				A venir
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				Le tricheur
+			</td>
+			<td>
+				la balle passe à traver une raquette et n'est pas renvoyé.
+			</td>
+			<td>
+				A venir
+			</td>
+		</tr>
+	</tbody>
+</table>
