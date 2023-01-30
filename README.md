@@ -218,7 +218,7 @@ Il s'agit d'un jeux qui à bercer entre guillement notre enfance, il s'agit d'un
 <h4>Comment jouer ?</h4>
 <ul>
   <li>Les joueurs peuvent se déplacer en verticale.</li>
-  <li>si la balle touche sois le coté droits sois le coté gauche, alors le point sera attribué au joueur inverse</li>
+  <li>Si la balle touche le coté droits ou le coté gauche, alors le point sera attribué au joueur inverse</li>
   <li>
     <ul>
       <li>La vitesse de la balle augmente au fur et à mesure des parties</li>
@@ -230,10 +230,14 @@ Il s'agit d'un jeux qui à bercer entre guillement notre enfance, il s'agit d'un
 <h4>Niveaux</h4>
 
 <ul>
-  <li></li>
+  <li>Le jeux possède le même niveau, un score est incrémenter à chaque fois qu'un joueur gagne.</li>
 </ul>
 
 <h4>Score</h4>
+Le score du jeux est gérer par rapport à si la balle touche le coté droits ou le coté gauche.
+le point est attribué au joueur inverse au sens.
+
+La partie ce termine dès qu'un joueur atteint 10 point.
 
 <h4>Haut faits</h4>
 
