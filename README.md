@@ -278,7 +278,6 @@ La partie ce termine dès qu'un joueur atteint 10 points.
 				A venir
 			</td>
 		</tr>
-		
 		<tr>
 			<td>
 				Le tricheur
