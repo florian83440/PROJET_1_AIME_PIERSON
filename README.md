@@ -193,17 +193,6 @@ De plus, le joueur aura la possibilité de sauvegarder son score en saisissant s
 	</tbody>
 </table>
 
-
-
-
-
-
-
-
-
-
-
-
 <h1>Pong (à notre sauce)</h1>
 <h3>Pourquoi ce jeu ?</h3> 
 
