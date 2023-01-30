@@ -206,12 +206,32 @@ De plus, le joueur aura la possibilité de sauvegarder son score en saisissant s
 <h1>Pong (à notre sauce)</h1>
 <h3>Pourquoi ce jeu ?</h3> 
 
+Il s'agit d'un jeux qui à bercer entre guillement notre enfance, il s'agit d'un jeux simple qui se joue à plusieur consistant à déplacer une barre verticalement pour faire rebondire une balle.
+
 <h3>Règles du jeu</h3> 
 <h4>But du jeu</h3>
 
+<ul>
+  <li>Le but du jeu est de ratrapper la balle et la faire rebondire à l'aide de la raquette. Le premier à attaindre 10 points gagne.</li>
+</ul>
+
 <h4>Comment jouer ?</h4>
+<ul>
+  <li>Les joueurs peuvent se déplacer en verticale.</li>
+  <li>si la balle touche sois le coté droits sois le coté gauche, alors le point sera attribué au joueur inverse</li>
+  <li>
+    <ul>
+      <li>La vitesse de la balle augmente au fur et à mesure des parties</li>
+      <li>La vitesse des raquettes des joueurs diminue au fur et à mesure des parties</li>
+    </ul>
+  </li>
+</ul>
 
 <h4>Niveaux</h4>
+
+<ul>
+  <li></li>
+</ul>
 
 <h4>Score</h4>
 
