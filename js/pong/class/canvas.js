@@ -2,32 +2,63 @@
  //window.onload = init;
  let canvas, ctx;
  let inputs = {};
+ const gameScene = new scene();
 
+  let player1Score = 0;
+  let player2Score = 0;
+  
+  const updatePlayer1Score = () => {
+    player1Score += 1;
+  };
+  
+  const updatePlayer2Score = () => {
+    player2Score += 1;
+  };
+  
+  const getScore = () => {
+    return `${player1Score} | ${player2Score}`;
+  };
 
- function setScore(score) {
-
- }
-
- function getScore() {
-
- }
-
- function init() {
+ function init(val) {
    // programme principal appelé quand toute la page et ses ressources
    // ont été chargées
+  if(val == "play") {
+    player1Score = 0;
+    player2Score = 0;
+  }
 
-   // On récupère le canvas
-   //canvas = document.getElementById("myCanvas");
    canvas = document.querySelector("#pong");
-
+   $(".game-score .score").text(getScore);
    // Pour dessiner on a besoin d'un contexte
    ctx = canvas.getContext("2d");
    ctx.canvas.width  = window.innerWidth;
    ctx.canvas.height = window.innerHeight;
 
+   //x
+   switch(rand(3)) {
+      case 0 :
+        x = Math.floor((canvas.width - (canvas.width / 4)));
+        break;
+      case 1 :
+        x = Math.floor((canvas.width / 2));
+        break;
+      case 2 : 
+        x = Math.floor((canvas.width / 4));
+        break;
+   }
 
-   x = Math.floor(Math.random() * canvas.width);
-   y = Math.floor(Math.random() * canvas.height);
+   //y
+   switch(rand(3)) {
+    case 0 :
+      y = Math.floor((canvas.height - (canvas.height / 4)));
+      break;
+    case 1 :
+      y = Math.floor((canvas.height / 2));
+      break;
+    case 2 : 
+      y = Math.floor((canvas.height / 4));
+      break;
+  }
    o.x = x;
    o.y = y;
 
@@ -48,7 +79,7 @@ function rand(int) {
      this.l = l;
      this.h = h;
      this.c = c;
-     if(Math.floor(Math.random() * 2) == 1) {
+     if(rand(2) == 1) {
        this.vitesseX = 1.5;
        this.vitesseY = 2;       
      } else {
@@ -134,7 +165,9 @@ let playerTwo = new player(50, 150, 25, 400, "white");
    playerOne.draw(ctx);
    playerTwo.x = ((canvas.width - playerTwo.l) - 10);
    playerTwo.draw(ctx);
-   o.move();
+   if(gameScene.menu() == false && gameScene.tab() == false && gameScene.game() == true) {
+    o.move();
+   }
    result = true;
   
    if ((o.x + o.l) > canvas.width - playerTwo.l) {
@@ -145,6 +178,7 @@ let playerTwo = new player(50, 150, 25, 400, "white");
        this.x = canvas.width - o.l - (canvas.width - playerTwo.x);
      } else {
        result = false;
+       updatePlayer1Score();
      }
    } else if(o.x < 0 + playerOne.l) {
      e = (playerOne.y + playerOne.h);
@@ -153,7 +187,8 @@ let playerTwo = new player(50, 150, 25, 400, "white");
        o.vitesseX = -o.vitesseX;
        o.x = o.x + playerOne.l;
      } else {
-       result = false; 
+       result = false;
+       updatePlayer2Score();
      }
    } else if((o.y + o.h) > canvas.height) {
      // Bas
@@ -169,5 +204,7 @@ let playerTwo = new player(50, 150, 25, 400, "white");
    // dans 1/60ème de seconde
    if(result == true) {
      requestAnimationFrame(animationloop);
+   } else {
+    init("")
    }
  }
