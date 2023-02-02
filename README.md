@@ -32,9 +32,10 @@ Ce projet se divise en plusieurs parties :
 <h3>Personas</h3> 
 https://docs.google.com/document/d/1sdVcxtwGHJ-xAalerZM2pFjRsA1_4oAy8uETlnxhZRI/edit?usp=sharing
 
-<h3>Scénarios (à finir)</h3> 
+<h3>Scénarios</h3> 
 https://docs.google.com/document/d/1uRTqgNI4uQThV_GxcM5RVeJ0VLyvaBjHJy1PJ1CRr1U/edit?usp=sharing
-<h3>Modèle de tâches (à finir)</h3> 
+
+<h3>Modèle de tâches</h3> 
 https://docs.google.com/drawings/d/16n494zFeevA8Zl0ozoBWnEhSdNHZ9CU3Bvtnix-ID9k/edit?usp=sharing
 
 <h3>Fonctionalités</h3> 
@@ -191,17 +192,6 @@ De plus, le joueur aura la possibilité de sauvegarder son score en saisissant s
 		</tr>
 	</tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
 
 <h1>Pong (à notre sauce)</h1>
 <h3>Pourquoi ce jeu ?</h3> 
