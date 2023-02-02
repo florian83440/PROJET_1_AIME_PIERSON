@@ -1,7 +1,10 @@
 
- window.onload = init;
+ //window.onload = init;
  let canvas, ctx;
  let inputs = {};
+
+
+ function score() {}
 
  function init() {
    // programme principal appelé quand toute la page et ses ressources
@@ -9,7 +12,7 @@
 
    // On récupère le canvas
    //canvas = document.getElementById("myCanvas");
-   canvas = document.querySelector("#myCanvas");
+   canvas = document.querySelector("#pong");
 
    // Pour dessiner on a besoin d'un contexte
    ctx = canvas.getContext("2d");
