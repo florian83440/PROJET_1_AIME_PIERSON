@@ -10,12 +10,64 @@
     <link rel="stylesheet" href="lib/bulma/css/bulma.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/navbar.js"></script>
+    <script src="js/script.js"></script>
     <title>PROJET 1</title>
 </head>
 
 <body>
 
-    <nav class="navbar is-danger is-fixed-top" role="navigation" aria-label="main navigation">
+    <div id="mainMenu" class="columns is-4">
+        <div class="column is-3 double">
+            <div>Pong</div>
+            <div>Space Invaders</div>
+        </div>
+        <div class="column is-3 simple">
+            <div>
+                <span class="title">Pong</span>
+                <br>
+                <br>
+                <table class="table is-striped">
+                    <thead>
+                        <tr>
+                            <th><abbr title="Position">Ranking</abbr></th>
+                            <th>Pseudo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td>Le F</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>Xx_DarkThomas83_xX</td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td>Fukano</td>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <td>DarkFuneral972</td>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <td>Le_J_C_Le_S</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="column is-3 simple">
+            <div class="title">Space Invaders</div>
+        </div>
+        <div class="column is-3 double">
+            <div>Profil</div>
+            <div>A propos</div>
+        </div>
+    </div>
+
+    <!-- <nav class="navbar is-danger is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
                 data-target="navbarBasicExample">
@@ -38,7 +90,13 @@
                 </a>
             </div>
         </div>
-    </nav>
+    </nav> -->
+
+    <!-- <div class="columns" id="search">
+        <div class="column is-offset-4 is-4">
+            <input type="text" name="searchName" id="searchName">
+        </div>
+    </div>
 
     <div class="columns is-multiline" id="mainInfos">
         <div class="column is-2 is-offset-1 card" style="padding:0px !important;">
@@ -52,7 +110,7 @@
                     <img src="https://store-images.s-microsoft.com/image/apps.58246.14366673839912084.10afbadd-9680-4014-82c7-01d75e20db82.d2766ae5-eccb-49b0-ac7c-318ac50660ca?q=90&w=480&h=270">
                 </div>
                 <footer class="card-footer">
-                    <a href="#" class="card-footer-item">Jouer</a>
+                    <a onclick="showGame('pong')" class="card-footer-item">Jouer</a>
                 </footer>
             </div>
         </div>
@@ -177,6 +235,7 @@
             </div>
         </div>
     </div>
+    <iframe src="" frameborder="0" style="display: none;" id="gameIFrame"></iframe> -->
 </body>
 
 </html>
