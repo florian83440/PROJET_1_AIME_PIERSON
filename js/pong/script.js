@@ -7,43 +7,14 @@ $(document).ready(() => {
         console.log("visible");
     } else {}
 
-    /*$("body").keydown((e) => {
-
-        z = 90;
-        s = 83;
+    $("body").keydown((e) => {
         echap = 27;
-        up = 38;
-        down = 40;
-        
-        if(z == e.keyCode) {
-            if($(".player-one").css("margin").split("px ")[0] >= 0) {
-                let height = $(".player-one").css("margin").split("px ")[0] - 25;
-                $(".player-one").css("margin", height + "px 20px");
-            }
-        } else if(s == e.keyCode) {
-            if($(".player-one").css("margin").split("px ")[0] <= 500) {
-                let height = $(".player-one").css("margin").split("px ")[0] - 1;
-                height = height + 26;
-                $(".player-one").css("margin", height + "px 20px");
-            }
-        } else if(echap == e.keyCode) { 
-                console.log(ctx.game() + " | " + ctx.tab());
-                if(ctx.tab() == true && ctx.game() == true) ctx.hideTab();
-                else if(ctx.tab() == false && ctx.game() == true) ctx.showTab();
-        } else if(up == e.keyCode) {
-            if($(".player-two").css("margin").split("px ")[0] >= 0) {
-                let height = $(".player-two").css("margin").split("px ")[0] - 25;
-                $(".player-two").css("margin", height + "px 20px");
-            }
-        } else if(down == e.keyCode) {
-            if($(".player-two").css("margin").split("px ")[0] <= 500) {
-                let height = $(".player-two").css("margin").split("px ")[0] - 1;
-                height = height + 26;
-                $(".player-two").css("margin", height + "px 20px");
-            }
+        if(echap == e.keyCode) { 
+                console.log(ctx.menu() + " | " + ctx.game() + " | " + ctx.tab());
+                if(ctx.menu() == false && ctx.tab() == true && ctx.game() == true) ctx.hideTab();
+                else if(ctx.menu() == false && ctx.tab() == false && ctx.game() == true) ctx.showTab();
         }
-
-    }); */
+    });
 
     $("input[type=button].button-element.return").click(() => {
         ctx.hideTab();
@@ -52,6 +23,8 @@ $(document).ready(() => {
         ctx.showMenu();
         ctx.showSnow();
         // reset la game.
+
+
     });
 
     $("input[type=button].button-element.play").click(() => {

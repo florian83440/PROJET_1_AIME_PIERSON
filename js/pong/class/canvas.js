@@ -4,7 +4,13 @@
  let inputs = {};
 
 
- function score() {}
+ function setScore(score) {
+
+ }
+
+ function getScore() {
+
+ }
 
  function init() {
    // programme principal appelé quand toute la page et ses ressources
