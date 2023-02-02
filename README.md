@@ -29,12 +29,13 @@ Ce projet se divise en plusieurs parties :
   </li>
 </ul>
 
-<h3>Personas (à finir)</h3> 
+<h3>Personas</h3> 
 https://docs.google.com/document/d/1sdVcxtwGHJ-xAalerZM2pFjRsA1_4oAy8uETlnxhZRI/edit?usp=sharing
 
-<h3>Scénarios (à finir)</h3> 
+<h3>Scénarios</h3> 
 https://docs.google.com/document/d/1uRTqgNI4uQThV_GxcM5RVeJ0VLyvaBjHJy1PJ1CRr1U/edit?usp=sharing
-<h3>Modèle de tâches (à finir)</h3> 
+
+<h3>Modèle de tâches</h3> 
 https://docs.google.com/drawings/d/16n494zFeevA8Zl0ozoBWnEhSdNHZ9CU3Bvtnix-ID9k/edit?usp=sharing
 
 <h3>Fonctionalités</h3> 
@@ -184,6 +185,95 @@ De plus, le joueur aura la possibilité de sauvegarder son score en saisissant s
 			</td>
 			<td>
 				Terminer le jeu en difficulté difficile sans se faire toucher
+			</td>
+			<td>
+				A venir
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<h1>Pong (à notre sauce)</h1>
+<h3>Pourquoi ce jeu ?</h3> 
+
+Il s'agit d'un jeux qui à bercer entre guillement notre enfance, il s'agit d'un jeux simple qui se joue à plusieur consistant à déplacer une barre verticalement pour faire rebondire une balle.
+
+<h3>Règles du jeu</h3> 
+<h4>But du jeu</h3>
+
+<ul>
+  <li>Le but du jeu est de ratrapper la balle et la faire rebondire à l'aide de la raquette. Le premier à attaindre 10 points gagne.</li>
+</ul>
+
+<h4>Comment jouer ?</h4>
+<ul>
+  <li>Les joueurs peuvent se déplacer en verticale.</li>
+  <li>Si la balle touche le coté droits ou le coté gauche, alors le point sera attribué au joueur inverse</li>
+  <li>
+    <ul>
+      <li>La vitesse de la balle augmente au fur et à mesure des parties</li>
+      <li>La vitesse des raquettes des joueurs diminue au fur et à mesure des parties</li>
+    </ul>
+  </li>
+</ul>
+
+<h4>Niveaux</h4>
+
+<ul>
+  <li>Le jeux possède le même niveau, un score est incrémenter à chaque fois qu'un joueur gagne.</li>
+</ul>
+
+<h4>Score</h4>
+Le score du jeux est gérer par rapport à si la balle touche le coté droits ou le coté gauche.
+le point est attribué au joueur inverse au sens.
+
+La partie ce termine dès qu'un joueur atteint 10 points.
+
+<h4>Haut faits</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>
+				Haut Faits
+			</th>
+			<th>
+				Conditions
+			</th>
+			<th>
+				Débloque
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				L'assasin
+			</td>
+			<td>
+				Si le score est de 10:0 ou 0:10
+			</td>
+			<td>
+				A venir
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Le testeur
+			</td>
+			<td>
+				arriver à dépasser les 10 points de score (impossible)
+			</td>
+			<td>
+				A venir
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Le tricheur
+			</td>
+			<td>
+				la balle passe à traver une raquette et n'est pas renvoyé.
 			</td>
 			<td>
 				A venir
