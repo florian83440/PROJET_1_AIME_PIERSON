@@ -1,23 +1,79 @@
 
- //window.onload = init;
+const updatePlayer1Score = () => {
+  player1Score += 1;
+};
+
+const updatePlayer2Score = () => {
+  player2Score += 1;
+};
+
+const getScore = () => {
+  return `${player1Score} | ${player2Score}`;
+};
+
+
+function rand(int) {
+  return Math.floor(Math.random() * int);
+}
+
+ class ball {
+
+
+   constructor(x, y, l, h, c) {
+     this.x = x;
+     this.y = y;
+     this.l = l;
+     this.h = h;
+     this.c = c;
+     if(rand(2) == 1) {
+       this.vitesseX = 2.5;
+       this.vitesseY = 3;       
+     } else {
+       this.vitesseX = 3;
+       this.vitesseY = 2.5;
+     }
+
+   }
+
+   draw(ctx) {
+     ctx.fillStyle = this.c;
+     ctx.fillRect(this.x, this.y, this.l, this.h);
+   }
+
+   move() {
+     this.x += this.vitesseX;
+     this.y += this.vitesseY;
+   }
+ }
+
+class player {
+  
+   constructor(x, y, l, h, c) {
+     this.x = x;
+     this.y = y;
+     this.l = l;
+     this.h = h;
+     this.c = c;
+   } 
+  
+  draw(ctx) {
+     ctx.fillStyle = this.c;
+     ctx.fillRect(this.x, this.y, this.l, this.h);
+  }
+  
+}
+
+//window.onload = init;
  let canvas, ctx;
  let inputs = {};
- const gameScene = new scene();
-
+const gameScene = new scene();
+// random x, random y
+let o = new ball(20, 20, 25, 25, "white");
+let playerOne = new player(10, 200, 25, 400, "white");   
+let playerTwo = new player(50, 200, 25, 400, "white");
   let player1Score = 0;
   let player2Score = 0;
   
-  const updatePlayer1Score = () => {
-    player1Score += 1;
-  };
-  
-  const updatePlayer2Score = () => {
-    player2Score += 1;
-  };
-  
-  const getScore = () => {
-    return `${player1Score} | ${player2Score}`;
-  };
 
  function init(val) {
    // programme principal appelé quand toute la page et ses ressources
@@ -25,6 +81,19 @@
   if(val == "play") {
     player1Score = 0;
     player2Score = 0;
+
+    playerOne.y = 200;
+    playerTwo.y = 200;
+    playerOne.h = 400;
+    playerTwo.h = 400;
+
+    if(rand(2) == 1) {
+      o.vitesseX = 2.5;
+      o.vitesseY = 3;       
+    } else {
+      o.vitesseX = 3;
+      o.vitesseY = 2.5;
+    }
   }
 
    canvas = document.querySelector("#pong");
@@ -66,89 +135,100 @@
    requestAnimationFrame(animationloop);
  }
 
-function rand(int) {
-  return Math.floor(Math.random() * int);
-}
-
- class ball {
 
 
-   constructor(x, y, l, h, c) {
-     this.x = x;
-     this.y = y;
-     this.l = l;
-     this.h = h;
-     this.c = c;
-     if(rand(2) == 1) {
-       this.vitesseX = 1.5;
-       this.vitesseY = 2;       
-     } else {
-       this.vitesseX = 2;
-       this.vitesseY = 1.5;
-     }
 
-   }
-
-   draw(ctx) {
-     ctx.fillStyle = this.c;
-     ctx.fillRect(this.x, this.y, this.l, this.h);
-   }
-
-   move() {
-     this.x += this.vitesseX;
-     this.y += this.vitesseY;
-   }
- }
-
-class player {
-  
-   constructor(x, y, l, h, c) {
-     this.x = x;
-     this.y = y;
-     this.l = l;
-     this.h = h;
-     this.c = c;
-   } 
-  
-  draw(ctx) {
-     ctx.fillStyle = this.c;
-     ctx.fillRect(this.x, this.y, this.l, this.h);
-  }
-  
-}
-
-function key() {
-    window.onkeyup = keyUp;
-    window.onkeydown = keyDown;
+ function key() {
+  window.onkeyup = keyUp;
+  window.onkeydown = keyDown;
 }
 
 function keyUp(e) {
-    switch(e.key) {
-        case "ArrowUp" :
-            inputs.arUp = false;
-        break;
-        case "ArrowDown" : 
-            inputs.arDown = false;
-        break;
-    }
+  switch(e.key) {
+      case "z" :
+          inputs.z = false;
+      break;
+      case "s" : 
+          inputs.s = false;
+      break;
+      case "ArrowUp" :
+          inputs.arUp = false;
+      break;
+      case "ArrowDown" : 
+          inputs.arDown = false;
+      break;
+  }
 }
 
 function keyDown(e) {
-    switch(e.key) {
-        case "ArrowUp" :
-            inputs.arUp = true;
-        break;
-        case "ArrowDown" : 
-            inputs.arDown = true;
-        break;
-    }
+  switch(e.key) {
+      case "z" :
+          inputs.z = true;
+      break;
+      case "s" : 
+          inputs.s = true;
+      break;
+      case "ArrowUp" :
+          inputs.arUp = true;
+      break;
+      case "ArrowDown" : 
+          inputs.arDown = true;
+      break;
+  }
 }
 
+  function rules(player, num, oldScore, o) {
+    if(player == null) {
+      if(o.vitesseX < 0) {
+        o.vitesseX += -0.2;
+      } else {
+        o.vitesseX += 0.2;
+      }
 
-                // random x, random y
-let o = new ball(20, 20, 25, 25, "white");
-let playerOne = new player(10, 100, 25, 400, "white");   
-let playerTwo = new player(50, 150, 25, 400, "white");
+      if(o.vitesseY < 0) {
+        o.vitesseY += -0.2;
+      } else {
+        o.vitesseY += 0.2;
+      }
+      console.log("vitesse bal : " + o.vitesseX + " | " + o.vitesseY);
+      return o;
+    } else {
+        if(parseInt(getScore().split(" | ")[num]) !== parseInt(oldScore.split(" | ")[num])) {
+          switch(parseInt(getScore().split(" | ")[num])) {
+            case 1:
+              player.h -=30;
+            break;
+            case 2:
+              player.h -=30;
+            break;
+            case 3:
+              player.h -=30;
+            break;
+            case 4:
+              player.h -=30;
+            break;
+            case 5:
+              player.h -=30;
+            break;
+            case 6:
+              player.h -=30;
+            break;
+            case 7:
+              player.h -=30;
+            break;
+            case 8:
+              player.h -=30;
+            break;
+            case 9:
+              player.h -=30;
+            break;
+          }
+        }
+        return player;
+      }
+  }
+
+
 
  function animationloop(tempsEcoule) {
    // 1 - On efface le contenu du canvas
@@ -156,18 +236,21 @@ let playerTwo = new player(50, 150, 25, 400, "white");
    ctx.fillStyle = "rgb(0, 0, 0, 0.3)";
    ctx.fillRect(0, 0, canvas.width, canvas.height);
    o.draw(ctx);
+   oldScore = getScore();
+   if(gameScene.menu() == false && gameScene.tab() == false && gameScene.game() == true) {
 
-   if(inputs.z == true) playerOne.x - 10;
-   if(inputs.s == true) playerOne.x + 10;
-   if(inputs.arUp == true) playerTwo.x - 10;
-   if(inputs.arDown == true) playerTwo.x + 10;
-   
+    if(inputs.z == true) playerOne.y -= 10;
+    if(inputs.s == true) playerOne.y += 10;
+    if(inputs.arUp == true) playerTwo.y -= 10;
+    if(inputs.arDown == true) playerTwo.y += 10;
+    
+    o.move();
+   }
+
    playerOne.draw(ctx);
    playerTwo.x = ((canvas.width - playerTwo.l) - 10);
    playerTwo.draw(ctx);
-   if(gameScene.menu() == false && gameScene.tab() == false && gameScene.game() == true) {
-    o.move();
-   }
+
    result = true;
   
    if ((o.x + o.l) > canvas.width - playerTwo.l) {
@@ -205,6 +288,23 @@ let playerTwo = new player(50, 150, 25, 400, "white");
    if(result == true) {
      requestAnimationFrame(animationloop);
    } else {
-    init("")
+    if(getScore().split(" | ")[0] >= 10 || getScore().split(" | ")[1] >= 10) {
+      // show aussi le score avec un récap etc ....
+      gameScene.showTab();
+
+      scoreOne = getScore().split(" | ")[0];
+      scoreTwo = getScore().split(" | ")[1];
+      
+      if(scoreOne > 10) scoreOne = 10;
+      if(scoreTwo > 10) scoreTwo = 10;
+
+      $(".game-score .score").text(`${scoreOne} | ${scoreTwo}`);
+
+    } else {    
+      playerOne = rules(playerOne, 0, oldScore, o);
+      playerTwo = rules(playerTwo, 1, oldScore, o);
+      o = rules(null, 0, null, o);
+      init("");
+    }
    }
  }
