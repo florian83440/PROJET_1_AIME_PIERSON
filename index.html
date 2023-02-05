@@ -7,235 +7,188 @@
     <!-- CSS  -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Bulma -->
-    <link rel="stylesheet" href="lib/bulma/css/bulma.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/navbar.js"></script>
+    <link rel="stylesheet" href="lib/bulma/css/bulma.min.css">*
     <script src="js/script.js"></script>
-    <title>PROJET 1</title>
+    <title>PROJET 1 - Welcome</title>
 </head>
 
 <body>
-
-    <div id="mainMenu" class="columns is-4">
-        <div class="column is-3 double">
-            <div><span class="title">Jouer pong</span></div>
-            <div><span class="title">Jouer Space Invaders</span></div>
-        </div>
-        <div class="column is-3 simple">
-            <div>
-                <span class="title">Pong</span>
-                <br>
-                <br>
-                <table class="table is-striped">
-                    <thead>
-                        <tr>
-                            <th><abbr title="Position">Ranking</abbr></th>
-                            <th>Pseudo</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>1</th>
-                            <td>Le F</td>
-                        </tr>
-                        <tr>
-                            <th>2</th>
-                            <td>Xx_DarkThomas83_xX</td>
-                        </tr>
-                        <tr>
-                            <th>3</th>
-                            <td>Fukano</td>
-                        </tr>
-                        <tr>
-                            <th>4</th>
-                            <td>DarkFuneral972</td>
-                        </tr>
-                        <tr>
-                            <th>5</th>
-                            <td>Le_J_C_Le_S</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="column is-3 simple">
-            <div class="title">Space Invaders</div>
-        </div>
-        <div class="column is-3 double">
-            <div><span class="title">Profil</span></div>
-            <div><span class="title">A propos</span></div>
-        </div>
-    </div>
-
-    <!-- <nav class="navbar is-danger is-fixed-top" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item" href="index.html">
-                    Accueil
-                </a>
-
-            </div>
-
-            <div class="navbar-end">
-                <a class="navbar-item" href="pages/about.html">
-                    Se connecter
-                </a>
-            </div>
-        </div>
-    </nav> -->
-
-    <!-- <div class="columns" id="search">
-        <div class="column is-offset-4 is-4">
-            <input type="text" name="searchName" id="searchName">
-        </div>
-    </div>
-
-    <div class="columns is-multiline" id="mainInfos">
-        <div class="column is-2 is-offset-1 card" style="padding:0px !important;">
-            <header class="card-header">
-                <p class="card-header-title">
-                    Pong
-                </p>
-            </header>
-            <div class="card-content" style="padding:0px !important;">
-                <div class="content" style="margin:0px !important;">
-                    <img src="https://store-images.s-microsoft.com/image/apps.58246.14366673839912084.10afbadd-9680-4014-82c7-01d75e20db82.d2766ae5-eccb-49b0-ac7c-318ac50660ca?q=90&w=480&h=270">
+    <div>
+        <div id="mainMenu" class="columns is-4">
+            <div class="column is-3 double">
+                <div id="divPong"><span class="title" onclick="showGame('pong')">Play pong</span></div>
+                <div>
+                    <span class="title">Me</span>
+                    <br />
+                    <br />
+                    <span id="profilInfos"></span>
                 </div>
-                <footer class="card-footer">
-                    <a onclick="showGame('pong')" class="card-footer-item">Jouer</a>
-                </footer>
             </div>
-        </div>
-        <div class="column is-2 is-offset-2 card" style="padding:0px !important;">
-            <header class="card-header">
-                <p class="card-header-title">
-                    Pong
-                </p>
-            </header>
-            <div class="card-content" style="padding:0px !important;">
-                <div class="content" style="margin:0px !important;">
-                    <img src="https://store-images.s-microsoft.com/image/apps.58246.14366673839912084.10afbadd-9680-4014-82c7-01d75e20db82.d2766ae5-eccb-49b0-ac7c-318ac50660ca?q=90&w=480&h=270">
+            <div class="column is-3 simple">
+                <div>
+                    <span class="title">Pong</span>
+                    <br>
+                    <br>
+                    <table class="table is-striped">
+                        <thead>
+                            <tr>
+                                <th><abbr title="Position">Ranking</abbr></th>
+                                <th>Pseudo</th>
+                                <th>Wins</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <td>Le F</td>
+                                <th>42</th>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>Xx_DarkThomas83_xX</td>
+                                <th>41</th>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>Fukano</td>
+                                <th>27</th>
+                            </tr>
+                            <tr>
+                                <th>4</th>
+                                <td>DarkFuneral972</td>
+                                <th>21</th>
+                            </tr>
+                            <tr>
+                                <th>5</th>
+                                <td>Zer4tor</td>
+                                <th>20</th>
+                            </tr>
+                            <tr>
+                                <th>5</th>
+                                <td>pseudo__</td>
+                                <th>20</th>
+                            </tr>
+                            <tr>
+                                <th>7</th>
+                                <td>pong_player</td>
+                                <th>14</th>
+                            </tr>
+                            <tr>
+                                <th>8</th>
+                                <td>Faker</td>
+                                <th>13</th>
+                            </tr>
+                            <tr>
+                                <th>9</th>
+                                <td>test</td>
+                                <th>12</th>
+                            </tr>
+                            <tr>
+                                <th>10</th>
+                                <td>LEROYYYYJENKINS</td>
+                                <th>9</th>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <footer class="card-footer">
-                    <a href="#" class="card-footer-item">Jouer</a>
-                </footer>
             </div>
-        </div>
-        <div class="column is-2 is-offset-2 card" style="padding:0px !important;">
-            <header class="card-header">
-                <p class="card-header-title">
-                    Pong
-                </p>
-            </header>
-            <div class="card-content" style="padding:0px !important;">
-                <div class="content" style="margin:0px !important;">
-                    <img src="https://store-images.s-microsoft.com/image/apps.58246.14366673839912084.10afbadd-9680-4014-82c7-01d75e20db82.d2766ae5-eccb-49b0-ac7c-318ac50660ca?q=90&w=480&h=270">
+            <div class="column is-3 simple">
+                <div>
+                    <span class="title">Space Invaders</span>
+                    <br>
+                    <br>
+                    <table class="table is-striped">
+                        <thead>
+                            <tr>
+                                <th><abbr title="Position">Ranking</abbr></th>
+                                <th>Pseudo</th>
+                                <th>Points</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <td>Le F</td>
+                                <th>999999</th>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>Xx_DarkThomas83_xX</td>
+                                <th>989745</th>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>Fukano</td>
+                                <th>986541</th>
+                            </tr>
+                            <tr>
+                                <th>4</th>
+                                <td>DarkFuneral972</td>
+                                <th>954123</th>
+                            </tr>
+                            <tr>
+                                <th>5</th>
+                                <td>Zer4tor</td>
+                                <th>952132</th>
+                            </tr>
+                            <tr>
+                                <th>6</th>
+                                <td>pseudo__</td>
+                                <th>950012</th>
+                            </tr>
+                            <tr>
+                                <th>7</th>
+                                <td>spaceinv_player</td>
+                                <th>899655</th>
+                            </tr>
+                            <tr>
+                                <th>8</th>
+                                <td>Faker</td>
+                                <th>899654</th>
+                            </tr>
+                            <tr>
+                                <th>9</th>
+                                <td>test</td>
+                                <th>899532</th>
+                            </tr>
+                            <tr>
+                                <th>10</th>
+                                <td>LEROYYYYJENKINS</td>
+                                <th>897566</th>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <footer class="card-footer">
-                    <a href="#" class="card-footer-item">Jouer</a>
-                </footer>
             </div>
-        </div>
-        <div class="column is-2 is-offset-1 card" style="padding:0px !important;">
-            <header class="card-header">
-                <p class="card-header-title">
-                    Pong
-                </p>
-            </header>
-            <div class="card-content" style="padding:0px !important;">
-                <div class="content" style="margin:0px !important;">
-                    <img src="https://store-images.s-microsoft.com/image/apps.58246.14366673839912084.10afbadd-9680-4014-82c7-01d75e20db82.d2766ae5-eccb-49b0-ac7c-318ac50660ca?q=90&w=480&h=270">
+            <div class="column is-3 double">
+                <div id="divSpaceInv"><span class="title">Play Space Invaders</span></div>
+                <div>
+                    <span class="title">About us</span>
+                    <br>
+                    <br>
+                    <span>Follow us on github <a target="_blank" href="https://github.com/florian83440">here</a> and <a
+                            target="_blank" href="https://github.com/CyberLifeDev-Thomas">here</a>.</span>
+                    <br>
+                    <br>
+                    <span>This site is a school based project where you can play two different games we made
+                        using</span><span style="color:#F0DB4F;">JAVASCRIPT</span><span> ,</span><span
+                        style="color:#FF5733;">HTML</span><span> and </span><span style="color:#264de4;">CSS</span>.
                 </div>
-                <footer class="card-footer">
-                    <a href="#" class="card-footer-item">Jouer</a>
-                </footer>
-            </div>
-        </div>
-        <div class="column is-2 is-offset-2 card" style="padding:0px !important;">
-            <header class="card-header">
-                <p class="card-header-title">
-                    Pong
-                </p>
-            </header>
-            <div class="card-content" style="padding:0px !important;">
-                <div class="content" style="margin:0px !important;">
-                    <img src="https://store-images.s-microsoft.com/image/apps.58246.14366673839912084.10afbadd-9680-4014-82c7-01d75e20db82.d2766ae5-eccb-49b0-ac7c-318ac50660ca?q=90&w=480&h=270">
-                </div>
-                <footer class="card-footer">
-                    <a href="#" class="card-footer-item">Jouer</a>
-                </footer>
-            </div>
-        </div>
-        <div class="column is-2 is-offset-2 card" style="padding:0px !important;">
-            <header class="card-header">
-                <p class="card-header-title">
-                    Pong
-                </p>
-            </header>
-            <div class="card-content" style="padding:0px !important;">
-                <div class="content" style="margin:0px !important;">
-                    <img src="https://store-images.s-microsoft.com/image/apps.58246.14366673839912084.10afbadd-9680-4014-82c7-01d75e20db82.d2766ae5-eccb-49b0-ac7c-318ac50660ca?q=90&w=480&h=270">
-                </div>
-                <footer class="card-footer">
-                    <a href="#" class="card-footer-item">Jouer</a>
-                </footer>
-            </div>
-        </div>
-        <div class="column is-2 is-offset-1 card" style="padding:0px !important;">
-            <header class="card-header">
-                <p class="card-header-title">
-                    Pong
-                </p>
-            </header>
-            <div class="card-content" style="padding:0px !important;">
-                <div class="content" style="margin:0px !important;">
-                    <img src="https://store-images.s-microsoft.com/image/apps.58246.14366673839912084.10afbadd-9680-4014-82c7-01d75e20db82.d2766ae5-eccb-49b0-ac7c-318ac50660ca?q=90&w=480&h=270">
-                </div>
-                <footer class="card-footer">
-                    <a href="#" class="card-footer-item">Jouer</a>
-                </footer>
-            </div>
-        </div>
-        <div class="column is-2 is-offset-2 card" style="padding:0px !important;">
-            <header class="card-header">
-                <p class="card-header-title">
-                    Pong
-                </p>
-            </header>
-            <div class="card-content" style="padding:0px !important;">
-                <div class="content" style="margin:0px !important;">
-                    <img src="https://store-images.s-microsoft.com/image/apps.58246.14366673839912084.10afbadd-9680-4014-82c7-01d75e20db82.d2766ae5-eccb-49b0-ac7c-318ac50660ca?q=90&w=480&h=270">
-                </div>
-                <footer class="card-footer">
-                    <a href="#" class="card-footer-item">Jouer</a>
-                </footer>
-            </div>
-        </div>
-        <div class="column is-2 is-offset-2 card" style="padding:0px !important;">
-            <header class="card-header">
-                <p class="card-header-title">
-                    Pong
-                </p>
-            </header>
-            <div class="card-content" style="padding:0px !important;">
-                <div class="content" style="margin:0px !important;">
-                    <img src="https://store-images.s-microsoft.com/image/apps.58246.14366673839912084.10afbadd-9680-4014-82c7-01d75e20db82.d2766ae5-eccb-49b0-ac7c-318ac50660ca?q=90&w=480&h=270">
-                </div>
-                <footer class="card-footer">
-                    <a href="#" class="card-footer-item">Jouer</a>
-                </footer>
             </div>
         </div>
     </div>
-    <iframe src="" frameborder="0" style="display: none;" id="gameIFrame"></iframe> -->
+    <iframe src="" frameborder="0" style="display: none;" id="gameIFrame"></iframe>
 </body>
 
 </html>
+<script>
+    let span = document.querySelector('#profilInfos');  
+
+    if(localStorage.getItem('username') != null){
+        span.innerHTML = "Welcome " + localStorage.getItem('username') + "<br /><br /><a onclick='logout()'>Log out</a>";
+    }
+    else{
+
+        span.innerHTML = '<a href="controller/login.html"">Sign in</a> to access your informations';
+    }
+</script>
