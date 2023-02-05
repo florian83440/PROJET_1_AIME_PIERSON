@@ -1,9 +1,13 @@
-<link rel="stylesheet" type="text/css" href="./../css/pong.css">
-<script type="text/javascript" src="./../js/pong/script.js"></script>
-<script type="text/javascript" src="./../js/pong/class/canvas.js"></script>
-<script type="text/javascript" src="./../js/pong/class/player.js"></script>
-<script type="text/javascript" src="./../js/pong/class/scene.js"></script>
-<div class="pong">
+<html lang="fr">
+    <head>
+        <title>Pong</title>
+        <script type="text/javascript" src="http://local.piersonthomas.fr/theme/files/JS/jquery-1.12.0.js"></script>
+        <link rel="stylesheet" type="text/css" href="./../css/pong.css">
+        <script type="text/javascript" src="./../js/pong/script.js"></script>
+        <script type="text/javascript" src="./../js/pong/class/scene.js"></script>
+        <script type="text/javascript" src="./../js/pong/class/canvas.js"></script>
+    </head>
+<body class="pong">
     <canvas id="snow"></canvas>
     <div class="menu">
         <div class="game_title"><img
@@ -11,6 +15,7 @@
         </div>
         <div class="element">
             <input type="button" class="button-element play" value="play">
+            <input type="button" class="button-element rules" value="rules">
             <input type="button" class="button-element settings" value="settings">
         </div>
     </div>
@@ -25,6 +30,7 @@
         </div>
     </div>
     <div class="game">
+        <div class="game-score"><h1 class="score"></h1></div>
         <canvas id="pong"></canvas>
     </div>
     <div class="tab">

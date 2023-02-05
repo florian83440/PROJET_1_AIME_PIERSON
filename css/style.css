@@ -62,11 +62,25 @@ body {
 
 #mainMenu>div>div {
     background-color: red;
-    border-radius: 5px;
+    border-radius: 25px;
     text-align: center;
     padding: 20px 10px;
+    transform:
+        rotateX(1deg) rotateZ(1deg);
+    transform-style: preserve-3d;
+    box-shadow:
+        1px 1px 0 1px #5a5a5a,
+        -1px 0 28px 0 rgba(20, 20, 20, 0.01),
+        28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+    transition:
+        .4s ease-in-out transform,
+        .4s ease-in-out box-shadow;
 }
 
+#mainMenu>div>div:hover {
+    transform:
+        translate3d(0px, -16px, 0px) rotateX(0deg) rotateZ(0deg);
+}
 
 #mainMenu table {
     width: 100%;
