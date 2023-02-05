@@ -299,7 +299,7 @@ function keyDown(e) {
       if(scoreTwo > 10) scoreTwo = 10;
 
       $(".game-score .score").text(`${scoreOne} | ${scoreTwo}`);
-
+//
     } else {    
       playerOne = rules(playerOne, 0, oldScore, o);
       playerTwo = rules(playerTwo, 1, oldScore, o);
