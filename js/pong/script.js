@@ -35,7 +35,8 @@ $(document).ready(() => {
         ctx.hideSnow();
         // start la game
 
-        init();
+        init("play");
+
     });
 
     $("input[type=button].button-element.settings").click(() => {
