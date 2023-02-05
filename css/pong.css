@@ -3,9 +3,7 @@
     margin: 0;
     overflow: hidden;
 }
-.game {
-    display: block !important;
-}
+
 .title {
     color: white;
     text-align: center;
@@ -78,6 +76,16 @@ transform: rotate(45deg);
 .button-element:focus {
     border: 4px solid grey;
     color: grey;
+}
+
+.game-score {
+    margin: 0 auto;
+    text-align: center;
+    width:-webkit-fill-available;
+    z-index: 9999;
+    color: white;
+    position: fixed;
+    top: 50px;
 }
 
 .player {
