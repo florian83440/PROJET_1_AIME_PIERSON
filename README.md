@@ -207,12 +207,12 @@ Il s'agit d'un jeu qui a bercé entre guillemets notre enfance, il s'agit d'un j
 
 <h4>Comment jouer ?</h4>
 <ul>
-  <li>Les joueurs peuvent se déplacer en verticale.</li>
-  <li>Si la balle touche le coté droits ou le coté gauche, alors le point sera attribué au joueur inverse</li>
+  <li>Les joueurs peuvent se déplacer à la verticale dans la limite de la taill de l'écran.</li>
+  <li>Si la balle touche le coté droit ou le coté gauche, alors le point sera attribué au joueur de l'autre côté</li>
   <li>
     <ul>
       <li>La vitesse de la balle augmente au fur et à mesure des parties</li>
-      <li>La vitesse des raquettes des joueurs diminue au fur et à mesure des parties</li>
+      <li>La vitesse ainsi que la taille des raquettes des joueurs diminue au fur et à mesure des parties</li>
     </ul>
   </li>
 </ul>
@@ -220,7 +220,8 @@ Il s'agit d'un jeu qui a bercé entre guillemets notre enfance, il s'agit d'un j
 <h4>Niveaux</h4>
 
 <ul>
-  <li>Le jeux possède le même niveau, un score est incrémenter à chaque fois qu'un joueur gagne.</li>
+  <li>Le jeu possède un seul niveau, un score est incrémenté à chaque fois qu'un joueur marque un point.</li>
+  <li>En revanche la diffcultée augmente tout au long de la partie</li>
 </ul>
 
 <h4>Score</h4>
