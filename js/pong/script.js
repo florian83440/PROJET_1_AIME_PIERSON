@@ -36,9 +36,11 @@ $(document).ready(() => {
                 console.log(ctx.menu() + " | " + ctx.game() + " | " + ctx.tab());
                 if(ctx.menu() == false && ctx.tab() == true && ctx.game() == true) { 
                   ctx.hideTab();
+                  pauseOut.volume = (cook.getSound() / 100);
                   pauseOut.play();
                 } else if(ctx.menu() == false && ctx.tab() == false && ctx.game() == true) {
                   ctx.showTab();
+                  pauseIn.volume = (cook.getSound() / 100);
                   pauseIn.play();
                 }
         }
@@ -51,6 +53,7 @@ $(document).ready(() => {
         ctx.hideRules(); 
         ctx.showMenu();
         ctx.showSnow();
+        buttonClick.volume = (cook.getSound() / 100);
         buttonClick.play();
     });
 
@@ -61,6 +64,7 @@ $(document).ready(() => {
         ctx.showGame();
         ctx.hideSnow();
         ctx.hideRules(); 
+        roundStart.volume = (cook.getSound() / 100);
         roundStart.play();
         init("play");
     });
@@ -73,6 +77,7 @@ $(document).ready(() => {
         ctx.hideRules(); 
         ctx.showSettings();
         ctx.showSnow();
+        buttonClick.volume = (cook.getSound() / 100);
         buttonClick.play();
     });
 
@@ -82,10 +87,12 @@ $(document).ready(() => {
       ctx.hideTab();
       ctx.hideGame();
       ctx.showRules();     
+      buttonClick.volume = (cook.getSound() / 100);
       buttonClick.play();
     });
 
     $("input[type=button].button-element.quit").click(() => {
+      buttonClick.volume = (cook.getSound() / 100);
       buttonClick.play();
     });
 
