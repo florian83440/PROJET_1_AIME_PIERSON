@@ -1,24 +1,21 @@
-<html lang="fr">
-    <head>
-        <title>Pong</title>
-        <script type="text/javascript" src="http://local.piersonthomas.fr/theme/files/JS/jquery-1.12.0.js"></script>
-        <link rel="stylesheet" type="text/css" href="./../css/pong.css">
-        <script type="text/javascript" src="./../js/pong/script.js"></script>
-        <script type="text/javascript" src="./../js/pong/class/cookie.js"></script>
-        <script type="text/javascript" src="./../js/pong/class/scene.js"></script>
-        <script type="text/javascript" src="./../js/pong/class/canvas.js"></script>
-    </head>
-<body class="pong">
+<script type="text/javascript" src="../lib/jquery-3.6.3.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./../css/pong.css">
+<script type="text/javascript" src="./../js/pong/script.js"></script>
+<script type="text/javascript" src="./../js/pong/class/cookie.js"></script>
+<script type="text/javascript" src="./../js/pong/class/scene.js"></script>
+<script type="text/javascript" src="./../js/pong/class/canvas.js"></script>
+<script type="text/javascript" src="./../js/script.js"></script>
+
+<div class="pong">
     <canvas id="snow"></canvas>
     <div class="menu">
-        <div class="game_title"><img
-                src="https://store-images.s-microsoft.com/image/apps.58246.14366673839912084.10afbadd-9680-4014-82c7-01d75e20db82.d2766ae5-eccb-49b0-ac7c-318ac50660ca?q=90&w=480&h=270">
+        <div class="game_title"><img src="../assets/images/pong_title.png">
         </div>
         <div class="element">
             <input type="button" class="button-element play" value="play">
             <input type="button" class="button-element rules" value="rules">
             <input type="button" class="button-element settings" value="settings">
-            <input type="button" class="button-element quit" value="quit">
+            <input type="button" class="button-element quit" onclick="closeGame()" value="quit" target="_parent">
         </div>
     </div>
     <div class="settings">
@@ -40,7 +37,9 @@
         </div>
     </div>
     <div class="game">
-        <div class="game-score"><h1 class="score"></h1></div>
+        <div class="game-score">
+            <h1 class="score"></h1>
+        </div>
         <canvas id="pong"></canvas>
     </div>
     <div class="tab">
