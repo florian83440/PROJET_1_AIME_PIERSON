@@ -16,3 +16,10 @@ function logout(){
     localStorage.removeItem('username');
     window.location.href = 'index.html';
 }
+
+function closeGame(){
+    let IFrame = parent.document.querySelector('#gameIFrame');
+    IFrame.src = '';
+    IFrame.style.display = 'none';
+    document.body.style.overflow = 'scroll';
+}

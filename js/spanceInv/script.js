@@ -1,27 +1,11 @@
 $(document).ready(() => {
     const ctx = new scene();
-    const cook = new cookie();
     $("div.tab").hide();
     $("div.game").hide();
     $("div.settings").hide();
     if($("div.tab").is(":visible")) {
         console.log("visible");
     } else {}
-
-    if(cook.isCookieExist() == false) {
-      cook.defaultCookie();
-    } else {
-      $(".musicconfig").val(cook.getMusic());
-      $(".soundconfig").val(cook.getSound());
-    }
-
-    $(".musicconfig").change(() => {
-      cook.setMusic($(".musicconfig").val())
-    })
-
-    $(".soundconfig").change(() => {
-      cook.setSound($(".soundconfig").val())
-    })
 
     $("body").keydown((e) => {
         echap = 27;
@@ -63,17 +47,6 @@ $(document).ready(() => {
         ctx.showSettings();
         ctx.showSnow();
     });
-
-    $("input[type=button].button-element.rules").click(() => {
-      // faire disparaitre la scene et afficher les options
-      ctx.hideMenu();
-      ctx.hideTab();
-      ctx.hideGame();
-      ctx.hideSnow();
-    });
-
-
-
 
 
 
