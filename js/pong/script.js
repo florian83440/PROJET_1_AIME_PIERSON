@@ -1,9 +1,16 @@
 $(document).ready(() => {
     const ctx = new scene();
     const cook = new cookie();
+
+    var buttonClick = new Audio('./../assets/sounds/buttonClick.wav');
+    var pauseIn = new Audio('./../assets/sounds/pauseIn.wav');
+    var pauseOut = new Audio('./../assets/sounds/pauseOut.wav');
+    var roundStart = new Audio('./../assets/sounds/roundStart.wav');
+
     $("div.tab").hide();
     $("div.game").hide();
     $("div.settings").hide();
+    $("div.rules").hide();
     if($("div.tab").is(":visible")) {
         console.log("visible");
     } else {}
@@ -27,8 +34,13 @@ $(document).ready(() => {
         echap = 27;
         if(echap == e.keyCode) { 
                 console.log(ctx.menu() + " | " + ctx.game() + " | " + ctx.tab());
-                if(ctx.menu() == false && ctx.tab() == true && ctx.game() == true) ctx.hideTab();
-                else if(ctx.menu() == false && ctx.tab() == false && ctx.game() == true) ctx.showTab();
+                if(ctx.menu() == false && ctx.tab() == true && ctx.game() == true) { 
+                  ctx.hideTab();
+                  pauseOut.play();
+                } else if(ctx.menu() == false && ctx.tab() == false && ctx.game() == true) {
+                  ctx.showTab();
+                  pauseIn.play();
+                }
         }
     });
 
@@ -36,11 +48,10 @@ $(document).ready(() => {
         ctx.hideTab();
         ctx.hideSettings();
         ctx.hideGame();
+        ctx.hideRules(); 
         ctx.showMenu();
         ctx.showSnow();
-        // reset la game.
-
-
+        buttonClick.play();
     });
 
     $("input[type=button].button-element.play").click(() => {
@@ -49,10 +60,9 @@ $(document).ready(() => {
         ctx.hideSettings();
         ctx.showGame();
         ctx.hideSnow();
-        // start la game
-
+        ctx.hideRules(); 
+        roundStart.play();
         init("play");
-
     });
 
     $("input[type=button].button-element.settings").click(() => {
@@ -60,8 +70,10 @@ $(document).ready(() => {
         ctx.hideMenu();
         ctx.hideTab();
         ctx.hideGame();
+        ctx.hideRules(); 
         ctx.showSettings();
         ctx.showSnow();
+        buttonClick.play();
     });
 
     $("input[type=button].button-element.rules").click(() => {
@@ -69,10 +81,13 @@ $(document).ready(() => {
       ctx.hideMenu();
       ctx.hideTab();
       ctx.hideGame();
-      ctx.hideSnow();
+      ctx.showRules();     
+      buttonClick.play();
     });
 
-
+    $("input[type=button].button-element.quit").click(() => {
+      buttonClick.play();
+    });
 
 
 

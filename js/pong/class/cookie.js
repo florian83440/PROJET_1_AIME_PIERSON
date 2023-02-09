@@ -15,23 +15,23 @@ class cookie {
     }
 
     defaultCookie() {
-        localStorage.setItem('soundLevel', 100);
-        localStorage.setItem('musicLevel', 100);
+        localStorage.setItem('pongSoundLevel', 100);
+        localStorage.setItem('pongMusicLevel', 100);
     }
 
     setMusic(val) {
-        localStorage.setItem('musicLevel', val);
+        localStorage.setItem('pongMusicLevel', val);
     }
 
     getMusic() {
-        return localStorage.getItem('musicLevel');
+        return localStorage.getItem('pongMusicLevel');
     }
 
     setSound(val) {
-        localStorage.setItem('soundLevel', val);
+        localStorage.setItem('pongSoundLevel', val);
     }
 
     getSound() {
-        return localStorage.getItem('soundLevel');
+        return localStorage.getItem('pongSoundLevel');
     }
 }
