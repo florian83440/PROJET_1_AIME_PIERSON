@@ -16,6 +16,11 @@ function rand(int) {
   return Math.floor(Math.random() * int);
 }
 
+
+var borderHit = new Audio('./../assets/sounds/borderHit.wav');
+var playerHit = new Audio('./../assets/sounds/playerHit.wav');
+var win = new Audio('./../assets/sounds/roundStart.wav');
+
  class ball {
 
 
@@ -252,16 +257,18 @@ function keyDown(e) {
    playerTwo.draw(ctx);
 
    result = true;
-  
+
    if ((o.x + o.l) > canvas.width - playerTwo.l) {
      e = (playerTwo.y + playerTwo.h);
      if(playerTwo.y < (o.y + o.h) && (playerTwo.y + playerTwo.h) > (o.y + o.h)) {
        // Droite
        o.vitesseX = -o.vitesseX;
        this.x = canvas.width - o.l - (canvas.width - playerTwo.x);
+       playerHit.play();
      } else {
        result = false;
        updatePlayer1Score();
+       win.play();
      }
    } else if(o.x < 0 + playerOne.l) {
      e = (playerOne.y + playerOne.h);
@@ -269,18 +276,22 @@ function keyDown(e) {
         // Gauche
        o.vitesseX = -o.vitesseX;
        o.x = o.x + playerOne.l;
+       playerHit.play();
      } else {
        result = false;
        updatePlayer2Score();
+       win.play();
      }
    } else if((o.y + o.h) > canvas.height) {
      // Bas
      o.vitesseY = - o.vitesseY;
      o.y = canvas.height - o.h;
+     borderHit.play();
    } else if(o.y < 0) {
      // Plafond
      o.vitesseY = - o.vitesseY;
      o.y = 0;
+     borderHit.play();
    }
 
    // On demande au navigateur de rappeler cette fonction
