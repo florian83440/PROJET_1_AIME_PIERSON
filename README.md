@@ -196,23 +196,23 @@ De plus, le joueur aura la possibilité de sauvegarder son score en saisissant s
 <h1>Pong (à notre sauce)</h1>
 <h3>Pourquoi ce jeu ?</h3> 
 
-Il s'agit d'un jeux qui à bercer entre guillement notre enfance, il s'agit d'un jeux simple qui se joue à plusieur consistant à déplacer une barre verticalement pour faire rebondire une balle.
+Il s'agit d'un jeu qui a bercé entre guillemets notre enfance, il s'agit d'un jeu simple qui se joue à plusieurs consistant à déplacer une barre verticalement pour faire rebondir une balle.
 
 <h3>Règles du jeu</h3> 
 <h4>But du jeu</h3>
 
 <ul>
-  <li>Le but du jeu est de ratrapper la balle et la faire rebondire à l'aide de la raquette. Le premier à attaindre 10 points gagne.</li>
+  <li>Le but du jeu est de rattraper la balle et la faire rebondir à l'aide de la raquette. Le premier à atteindre 10 points gagne.</li>
 </ul>
 
 <h4>Comment jouer ?</h4>
 <ul>
-  <li>Les joueurs peuvent se déplacer en verticale.</li>
-  <li>Si la balle touche le coté droits ou le coté gauche, alors le point sera attribué au joueur inverse</li>
+  <li>Les joueurs peuvent se déplacer à la verticale dans la limite de la taill de l'écran.</li>
+  <li>Si la balle touche le coté droit ou le coté gauche, alors le point sera attribué au joueur de l'autre côté</li>
   <li>
     <ul>
       <li>La vitesse de la balle augmente au fur et à mesure des parties</li>
-      <li>La vitesse des raquettes des joueurs diminue au fur et à mesure des parties</li>
+      <li>La vitesse ainsi que la taille des raquettes des joueurs diminue au fur et à mesure des parties</li>
     </ul>
   </li>
 </ul>
@@ -220,14 +220,15 @@ Il s'agit d'un jeux qui à bercer entre guillement notre enfance, il s'agit d'un
 <h4>Niveaux</h4>
 
 <ul>
-  <li>Le jeux possède le même niveau, un score est incrémenter à chaque fois qu'un joueur gagne.</li>
+  <li>Le jeu possède un seul niveau, un score est incrémenté à chaque fois qu'un joueur marque un point.</li>
+  <li>En revanche la diffcultée augmente tout au long de la partie</li>
 </ul>
 
 <h4>Score</h4>
-Le score du jeux est gérer par rapport à si la balle touche le coté droits ou le coté gauche.
-le point est attribué au joueur inverse au sens.
+Pour marquer un point il faut que la balle touche le bord de l'écran de votre adversaire sans qu'il ne puisse la rattraper avec sa raquette.
+Le joueur qui touche l'éran de l'adversaire marque alors 1 point.
 
-La partie ce termine dès qu'un joueur atteint 10 points.
+La partie se termine dès qu'un joueur atteint 10 points.
 
 <h4>Haut faits</h4>
 
@@ -251,7 +252,7 @@ La partie ce termine dès qu'un joueur atteint 10 points.
 				L'assasin
 			</td>
 			<td>
-				Si le score est de 10:0 ou 0:10
+				Gagner une partie 10 à 0
 			</td>
 			<td>
 				A venir
@@ -262,7 +263,7 @@ La partie ce termine dès qu'un joueur atteint 10 points.
 				Le testeur
 			</td>
 			<td>
-				arriver à dépasser les 10 points de score (impossible)
+				Arriver à dépasser les 10 points de score (impossible en théorie)
 			</td>
 			<td>
 				A venir
@@ -273,7 +274,7 @@ La partie ce termine dès qu'un joueur atteint 10 points.
 				Le tricheur
 			</td>
 			<td>
-				la balle passe à traver une raquette et n'est pas renvoyé.
+				La balle passe à travers une raquette et n'est pas renvoyée.
 			</td>
 			<td>
 				A venir

@@ -1,4 +1,141 @@
-#gameCanvas{
+body {
+    background: url('/assets/images/bg.jpg');
+    background-attachment: fixed;
+    height: 100%;
+    overflow: hidden;
+}
+body > div{
+    background: linear-gradient(-90deg, rgba(238, 118, 82, 0.2), rgba(231, 60, 126, 0.2), rgba(35, 165, 213, 0.2), rgba(35, 213, 171, 0.2));
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+    width: 100%;
+    height: 100%;
+}
+.columns {
+    margin: 0 !important;
+}
+
+#gameCanvas {
     border: 1px solid rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#mainInfos>div {
+    margin-top: 75px;
+}
+
+/* #search{
+    background-color: red;
+    margin-top: 500px;
+} */
+
+#gameIFrame {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+}
+
+#mainMenu {
+    position: absolute;
+    left: -30px;
+    right: 0;
+    margin-left: 10% !important;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+}
+
+#mainMenu>div {
+    margin: 10px;
+    padding: 0;
+}
+
+#mainMenu>div.double>div {
+    height: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+#mainMenu>div.simple>div {
+    height: 100%;
+}
+
+#mainMenu>div>div{
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px 10px;
+    transform:
+      perspective(2000px)
+      translate3d(0px, 0px, -150px)
+      rotateX(27deg)
+      scale(0.9, 0.9);
+    transition: 0.2s ease-in-out transform, 0.2s linear background;
+    overflow: hidden;
+    color: white;
+}
+#mainMenu>div>div:not(#divPong):not(#divSpaceInv) {
+    background: linear-gradient(#252525, #252525 50%, white 50%, white);
+    background-size: 100% 200%;
+}
+
+#mainMenu>div>div:hover {
+    transform: translate3d(0px, 0px, -250px);
+    color: #252525 !important;
+}
+
+#mainMenu>div>div:hover:not(#divPong):not(#divSpaceInv) {
+    background-color: rgba(255, 255, 255);
+    background-position: 100% 100%;
+}
+
+#mainMenu>div>div:hover table{
+    background-color: rgba(255, 255, 255);
+}
+
+#mainMenu>div>div:hover .title{
+    color: #252525 !important;
+}
+
+#mainMenu>div>div table {
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: 0.4s linear background-color;
+    width: 100%;
+}
+
+#divPong,
+#divSpaceInv{
+    background-position: center;
+    padding: 40% 10px !important
+}
+#divPong{
+    background-image: linear-gradient(to bottom, #050505bb, #000000a8), url("/assets/images/pong_bg.png");
+}
+#divSpaceInv{
+    background-image: linear-gradient(to bottom, #050505bb, #000000a8), url("/assets/images/pong_bg.png");
+}
+
+.title{
+    color: white !important;
+    transition: 0.1s linear 0.2s color;
+}
+
+#divPong .title:hover,
+#divSpaceInv .title:hover{
+    cursor: pointer;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
