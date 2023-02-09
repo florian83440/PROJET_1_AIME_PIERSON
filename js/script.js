@@ -1,33 +1,18 @@
-var canvas, ctx, w, h;
+//Open the selected game in an iframe
+function showGame(name){
+    let IFrame = document.querySelector('#gameIFrame');
+    IFrame.src = 'controller/'+name+'.html';
+    IFrame.style.display = 'block';
+    document.body.style.height = '100%';
+    document.body.style.overflow = 'hidden';
+}
 
+function logged(username){
+    localStorage.setItem('username', username);
+    window.location.href = '../index.html';
+}
 
-window.onload = function init() {
-    canvas = document.querySelector("#gameCanvas");
-
-    w = canvas.width;
-    h = canvas.height;
-
-    ctx = canvas.getContext('2d');
-
-    window.addEventListener('keypress', (event) => {
-        //113 => Q, 100 => D
-        drawSpaceship(10, 10)
-
-    let ctx = document.querySelector('#gameCanvas').getContext('2d');
-
-    ctx.fillStyle = "#FF0000";
-    ctx.fillRect(20, 20, 150, 100);
-
-  });
-
-};
-
-function drawSpaceship(x, y) {
-    
-    ctx.save();
-
-    ctx.strokeRect(375, 700, 50, 70);
-    ctx.translate(x, y);
-
-    context.restore();
+function logout(){
+    localStorage.removeItem('username');
+    window.location.href = 'index.html';
 }

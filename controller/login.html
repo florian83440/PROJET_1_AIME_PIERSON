@@ -1,0 +1,40 @@
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Bulma -->
+    <link rel="stylesheet" href="../lib/bulma/css/bulma.min.css">
+    <script src="../js/script.js"></script>
+    <title>PROJET 1 - Login</title>
+</head>
+
+<body>
+    <div class="columns is-centered is-vcentered">
+        <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+            <form class="box" id="formLogin">
+                <div class="field">
+                    <label for="" class="label">Username</label>
+                    <div class="control">
+                        <input type="text" class="input" id="username" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="" class="label">Password</label>
+                    <div class="control">
+                        <input type="password" class="input" required>
+                    </div>
+                </div>
+                <div class="field" style="text-align: center;">
+                    <button type="button" onclick="logged(document.querySelector('#username').value)" class="button is-dark">
+                        Login
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
