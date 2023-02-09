@@ -47,6 +47,9 @@ class scene {
     showMenu() { $("div.menu").show(); }
     hideMenu() { $("div.menu").hide(); }
 
+    showRules() { $("div.rules").show(); }
+    hideRules() { $("div.rules").hide(); }
+
     showGame() { $("div.game").show(); }
     hideGame() { $("div.game").hide(); }
 
