@@ -20,6 +20,7 @@ function rand(int) {
 var borderHit = new Audio('./../assets/sounds/borderHit.wav');
 var playerHit = new Audio('./../assets/sounds/playerHit.wav');
 var win = new Audio('./../assets/sounds/roundStart.wav');
+const cook = new cookie();
 
  class ball {
 
@@ -30,14 +31,8 @@ var win = new Audio('./../assets/sounds/roundStart.wav');
      this.l = l;
      this.h = h;
      this.c = c;
-     if(rand(2) == 1) {
-       this.vitesseX = 2.5;
-       this.vitesseY = 3;       
-     } else {
-       this.vitesseX = 3;
-       this.vitesseY = 2.5;
-     }
-
+      this.vitesseX = 4.5;
+      this.vitesseY = 5;       
    }
 
    draw(ctx) {
@@ -84,6 +79,7 @@ let playerTwo = new player(50, 200, 25, 400, "white");
    // programme principal appelé quand toute la page et ses ressources
    // ont été chargées
   if(val == "play") {
+    let o = new ball(20, 20, 25, 25, "white");
     player1Score = 0;
     player2Score = 0;
 
@@ -92,13 +88,8 @@ let playerTwo = new player(50, 200, 25, 400, "white");
     playerOne.h = 400;
     playerTwo.h = 400;
 
-    if(rand(2) == 1) {
-      o.vitesseX = 2.5;
-      o.vitesseY = 3;       
-    } else {
-      o.vitesseX = 3;
-      o.vitesseY = 2.5;
-    }
+      o.vitesseX = 4.5;
+      o.vitesseY = 5;       
   }
 
    canvas = document.querySelector("#pong");
@@ -185,15 +176,15 @@ function keyDown(e) {
   function rules(player, num, oldScore, o) {
     if(player == null) {
       if(o.vitesseX < 0) {
-        o.vitesseX += -0.2;
+        o.vitesseX += -0.6;
       } else {
-        o.vitesseX += 0.2;
+        o.vitesseX += 0.6;
       }
 
       if(o.vitesseY < 0) {
-        o.vitesseY += -0.2;
+        o.vitesseY += -0.6;
       } else {
-        o.vitesseY += 0.2;
+        o.vitesseY += 0.6;
       }
       console.log("vitesse bal : " + o.vitesseX + " | " + o.vitesseY);
       return o;
@@ -264,10 +255,12 @@ function keyDown(e) {
        // Droite
        o.vitesseX = -o.vitesseX;
        this.x = canvas.width - o.l - (canvas.width - playerTwo.x);
+       playerHit.volume = (cook.getSound() / 100);
        playerHit.play();
      } else {
        result = false;
        updatePlayer1Score();
+       win.volume = (cook.getSound() / 100);
        win.play();
      }
    } else if(o.x < 0 + playerOne.l) {
@@ -276,21 +269,25 @@ function keyDown(e) {
         // Gauche
        o.vitesseX = -o.vitesseX;
        o.x = o.x + playerOne.l;
+       playerHit.volume = (cook.getSound() / 100);
        playerHit.play();
      } else {
        result = false;
        updatePlayer2Score();
+       win.volume = (cook.getSound() / 100);
        win.play();
      }
    } else if((o.y + o.h) > canvas.height) {
      // Bas
      o.vitesseY = - o.vitesseY;
      o.y = canvas.height - o.h;
+     borderHit.volume = (cook.getSound() / 100);
      borderHit.play();
    } else if(o.y < 0) {
      // Plafond
      o.vitesseY = - o.vitesseY;
      o.y = 0;
+     borderHit.volume = (cook.getSound() / 100);
      borderHit.play();
    }
 
