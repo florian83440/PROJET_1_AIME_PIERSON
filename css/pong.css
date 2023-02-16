@@ -176,6 +176,26 @@ body, html{
     width:100%;
     height:100%;
   }
+
+  .musicTimeData {
+    color: white;
+    font-weight:bold;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0px 30px;
+    }
+
+
+    .text {
+        color: white !important;
+        width: 50%;
+        margin: 0 auto;
+        height: 300px;
+        overflow: overlay;
+    }
+
   /*canvas#myCanvas {
     width: -webkit-fill-available;
     height: -webkit-fill-available;

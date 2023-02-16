@@ -133,3 +133,12 @@ transform: rotate(45deg);
     margin: 0 auto;
     text-align: center;
 }
+.musicTimeData {
+    color: white;
+    font-weight:bold;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0px 30px;
+}

@@ -30,9 +30,9 @@ class scene {
         }
         return true;
     }
-
-    settings() {
-        if($("canvas#snow").css("display") == "none") {
+    
+    listPlay() {
+        if($("div.listPlay").css("display") == "none") {
             return false;
         }
         return true;
@@ -41,11 +41,20 @@ class scene {
     showTab() { $("div.tab").show(); }
     hideTab() { $("div.tab").hide(); }
 
+    showPlayMenu() { $("div.play").show(); }
+    hidePlayMenu() { $("div.play").hide(); }
+
+    showListPlay() { $("div.listPlay").show(); }
+    hideListPlay() { $("div.listPlay").hide(); }
+
     showSnow() { $("canvas#snow").show(); }
     hideSnow() { $("canvas#snow").hide(); }
 
     showMenu() { $("div.menu").show(); }
     hideMenu() { $("div.menu").hide(); }
+
+    showRules() { $("div.rules").show(); }
+    hideRules() { $("div.rules").hide(); }
 
     showGame() { $("div.game").show(); }
     hideGame() { $("div.game").hide(); }
