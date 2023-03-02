@@ -262,6 +262,7 @@ function animationloop(tempsEcoule) {
     //if(inputs.enter == true) projectil[projectil.length] = new projectile((playerTwo.x + (playerTwo.l / 2)), playerTwo.y, 10, 10, "white");
     //if(inputs.space == true) projectil[projectil.length] = new projectile((playerOne.x + (playerOne.l / 2)), playerOne.y, 10, 10, "white");
   }
+  console.log(projectil);
   for(var i = 0; i < projectil.length;i++) {
     if(projectil[i].y <= 0) {
       projectil.shift();
