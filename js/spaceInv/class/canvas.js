@@ -252,9 +252,7 @@ function init(val) {
 }
 
 function animationloop(tempsEcoule) {
-  ctx.fillStyle = "rgb(0, 0, 0, 0.4)";
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
-   
+
   map.draw(ctx);
 
   /*

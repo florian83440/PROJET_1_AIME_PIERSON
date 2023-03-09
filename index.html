@@ -162,17 +162,11 @@
             </div>
             <div class="column is-3 double">
                 <div id="divSpaceInv"><span class="title" onclick="showGame('spaceInv')">Play Space Invaders</span></div>
-                <div>
-                    <span class="title">About us</span>
+                <div onclick="window.location.href = 'controller/achievements.html'">
+                    <span class="title">Achievements</span>
                     <br>
                     <br>
-                    <span>Follow us on github <a target="_blank" href="https://github.com/florian83440">here</a> and <a
-                            target="_blank" href="https://github.com/CyberLifeDev-Thomas">here</a>.</span>
-                    <br>
-                    <br>
-                    <span>This site is a school based project where you can play two different games we made
-                        using</span><span style="color:#F0DB4F;">JAVASCRIPT</span><span> ,</span><span
-                        style="color:#FF5733;">HTML</span><span> and </span><span style="color:#264de4;">CSS</span>.
+                    <p>Click to see your Achievements !</p>
                 </div>
             </div>
         </div>
@@ -187,7 +181,7 @@
         span.innerHTML = "Welcome " + localStorage.getItem('username') + "<br /><br /><a onclick='logout()'>Log out</a>";
     }
     else{
-
+        localStorage.setItem('comeFrom', 'index');
         span.innerHTML = '<a href="controller/login.html"">Sign in</a> to access your informations';
     }
 </script>
