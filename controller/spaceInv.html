@@ -1,11 +1,13 @@
 <html lang="fr">
     <head>
-        <title>Pong</title>
+        <title>Space Invader</title>
         <script type="text/javascript" src="../lib/jquery-3.6.3.min.js"></script>
         <link rel="stylesheet" type="text/css" href="./../css/spaceInv.css">
         <script type="text/javascript" src="./../js/spaceInv/script.js"></script>
+        <script type="text/javascript" src="./../js/spaceInv/class/cookie.js"></script>
         <script type="text/javascript" src="./../js/spaceInv/class/scene.js"></script>
         <script type="text/javascript" src="./../js/spaceInv/class/canvas.js"></script>
+        <script type="text/javascript" src="./../js/script.js"></script>
     </head>
 <body class="spaceinv">
     <div class="menu">
@@ -13,17 +15,35 @@
             <img src="../assets/images/spaceinv_title.png">
         </div>
         <div class="element">
-            <input type="button" class="button-element play" value="play">
+            <input type="button" class="button-element toPlay" value="play">
             <input type="button" class="button-element rules" value="rules">
             <input type="button" class="button-element settings" value="settings">
+            <input type="button" class="button-element quit" onclick="closeGame()" value="quit" target="_parent">
+            <div class="musicTimeData"><p class="musicInfo">Now Playing "" - </p></div>
+        </div>
+    </div>
+    <div class="play">
+        <div class="element">
+            <input type="button" class="button-element listPlay" value="story">
+            <input type="button" class="button-element infinitePlay" value="infinite">
+
+            <input type="button" class="button-element return" value="return">
+        </div>
+    </div>
+    <div class="listPlay">
+        <div class="element">
+            <h1>List of levels</h1>
+            <input type="button" class="button-element return" value="return">
         </div>
     </div>
     <div class="settings">
         <div class="element">
             <h1 class="title">settings</h1>
             <div class="element-text">
-                <p class="text-left">Sound : </p>
-                <input type="range" class="button-element" value="100">
+                <p class="text-left">Game Sound : </p>
+                <input type="range" class="button-element soundconfig" value="100">
+                <p class="text-left">Music : </p>
+                <input type="range" class="button-element musicconfig" value="100">
             </div>
             <input type="button" class="button-element return" value="return">
         </div>

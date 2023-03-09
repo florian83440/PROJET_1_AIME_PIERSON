@@ -1,7 +1,13 @@
+@font-face {
+    font-family: Pixel;
+    src: url('/assets/fonts/public-pixel-font/PublicPixel-z84yD.ttf');
+}
+
 .spaceinv {
     background-color: black;
     margin: 0;
     overflow: hidden;
+    font-family: Pixel !important;
 }
 
 .title {
@@ -42,8 +48,6 @@
     top:100px;
     animation: 6s infinite running logo;
 }
-
-
 
 @keyframes logo {
     0%, 100% { transform: scale(0.5) rotate(0deg); }
@@ -132,4 +136,13 @@ transform: rotate(45deg);
     position: fixed;
     margin: 0 auto;
     text-align: center;
+}
+.musicTimeData {
+    color: white;
+    font-weight:bold;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0px 30px;
 }
