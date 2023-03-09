@@ -234,12 +234,11 @@ function keyDown(e) {
    o.draw(ctx);
    oldScore = getScore();
    if(gameScene.menu() == false && gameScene.tab() == false && gameScene.game() == true) {
+    if((ctx.canvas.height - playerOne.h) > playerOne.y) { if(inputs.s == true) playerOne.y += 10; }
+    if(0 < playerOne.y) { if(inputs.z == true) playerOne.y -= 10; }
 
-    if(inputs.z == true) playerOne.y -= 10;
-    if(inputs.s == true) playerOne.y += 10;
-    if(inputs.arUp == true) playerTwo.y -= 10;
-    if(inputs.arDown == true) playerTwo.y += 10;
-    
+    if((ctx.canvas.height - playerTwo.h) > playerTwo.y) { if(inputs.arDown == true) playerTwo.y += 10; }
+    if(0 < playerTwo.y) { if(inputs.arUp == true) playerTwo.y -= 10; }    
     o.move();
    }
 

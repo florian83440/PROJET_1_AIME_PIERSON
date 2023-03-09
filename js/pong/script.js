@@ -30,6 +30,50 @@ $(document).ready(() => {
       cook.setSound($(".soundconfig").val())
     })
 
+
+    var theme = {
+      0 : "./../assets/sounds/songs/T a e Beats - Katalenai.mp3",
+      1 : "./../assets/sounds/songs/T a e Beats - Modern days.mp3",
+      2 : "./../assets/sounds/songs/T a e Beats - The Spaceman.mp3"
+    };
+  
+    function newTheme() {
+      var audio = theme[Math.floor(Math.random() * 3)];
+      var playTheme = null;
+      playTheme = new Audio(audio);
+      playTheme.volume = (cook.getMusic() / 100);
+      playTheme.play();
+      return { playTheme, audio };
+    }
+  
+    var { playTheme, audio } = newTheme();
+    setInterval(() => {
+      playTheme.volume = (cook.getMusic() / 100);
+      if(playTheme.currentTime >= (playTheme.duration)) {
+        console.log("start new");
+        playTheme = newTheme();
+        time = 0;
+      } else {
+        console.log("playing...");
+        var minute = 0;
+        var seconde = parseInt(playTheme.currentTime, 0);
+        while(seconde > 59) {
+          seconde -= 59;
+          minute++;
+        }
+        if(seconde < 10) {
+          seconde = "0" + seconde;
+        }
+        audio = audio.replace("./../assets/sounds/songs/T a e Beats - ", "");
+        audio = audio.replace(".mp3", "");
+        $(".musicInfo").text("Now Playing \"" + audio + "\" - " + minute + " : " + seconde);
+      }
+    }, 1000);
+
+
+
+
+
     $("body").keydown((e) => {
         echap = 27;
         if(echap == e.keyCode) { 
