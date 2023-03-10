@@ -38,7 +38,7 @@ https://docs.google.com/document/d/1uRTqgNI4uQThV_GxcM5RVeJ0VLyvaBjHJy1PJ1CRr1U/
 <h3>Modèle de tâches</h3> 
 https://docs.google.com/drawings/d/16n494zFeevA8Zl0ozoBWnEhSdNHZ9CU3Bvtnix-ID9k/edit?usp=sharing
 
-<h3>Fonctionalités</h3> 
+<h3>Fonctionnalités</h3> 
 
 <ul>
 	<li>Page d'accueil proposant les différentes jeux et d'autres infos sur le projet</li>
