@@ -9,7 +9,12 @@ function showGame(name){
 
 function logged(username){
     localStorage.setItem('username', username);
-    window.location.href = '../index.html';
+    let comeFrom = localStorage.getItem('comeFrom');
+    if(comeFrom == 'index'){
+        window.location.href = '../index.html';
+    }else{
+        window.location.href = '../controller/'+comeFrom+'.html';
+    }
 }
 
 function logout(){

@@ -1,0 +1,40 @@
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Bulma -->
+    <link rel="stylesheet" href="/lib/bulma/css/bulma.min.css">*
+    <script src="/js/script.js"></script>
+    <title>PROJET 1 - Welcome</title>
+</head>
+
+<body>
+    <button type="button" class="button is-dark" style="margin: 25px" onclick="window.location.href = '../index.html'">Return</button>
+    <center>
+        <h1 class="title" id="achievementsTitle"></h1>
+    </center>
+    <br />
+
+    <div class="success">
+        <div>Nom du haut fait</div>
+        <div>Description</div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    let span = document.querySelector('#achievementsTitle');
+    localStorage.setItem('comeFrom', 'achievements');
+    if (localStorage.getItem('username') != null) {
+        span.innerHTML = "Achievements";
+    }
+    else {
+
+        span.innerHTML = '<a style="text-decoration: none; color: yellow;" href="login.html"">Sign in</a> to see you achievements';
+    }
+</script>
