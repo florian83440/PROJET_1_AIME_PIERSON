@@ -246,7 +246,6 @@ function init(val) {
     }
 */
 
-
     key();
     requestAnimationFrame(animationloop);
 }
