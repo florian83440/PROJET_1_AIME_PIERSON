@@ -90,7 +90,7 @@ $(document).ready(() => {
   });
 
 
-  var dev = true;
+  var dev = false;
   if(dev == true) {
     ctx.hideTab();
     ctx.hideSettings();
@@ -133,11 +133,22 @@ $(document).ready(() => {
       //ctx.showGame();
       ctx.hideRules(); 
       ctx.showPlayMenu();
-      //roundStart.volume = (cook.getSound() / 100);
-      //roundStart.play();
-      //init("play");
+      buttonClick.volume = (cook.getSound() / 100);
+      buttonClick.play();
   });
 
+  $("input[type=button].button-element.infinitePlay").click(() => {
+    ctx.hideMenu();
+    ctx.hideTab();
+    ctx.hideSettings();
+    ctx.showGame();
+    ctx.hideListPlay(); 
+    ctx.hidePlayMenu(); 
+    ctx.hideRules(); 
+    roundStart.volume = (cook.getSound() / 100);
+    roundStart.play();
+    init("play");
+  });
   
   $("input[type=button].button-element.listPlay").click(() => {
     ctx.hideMenu();
@@ -146,7 +157,8 @@ $(document).ready(() => {
     ctx.hideRules(); 
     ctx.hidePlayMenu();
     ctx.showListPlay();
-
+    buttonClick.volume = (cook.getSound() / 100);
+    buttonClick.play();
   });
 
   $("input[type=button].button-element.settings").click(() => {
