@@ -116,18 +116,37 @@ class gameMap {
       let posX = 0;
       let height = 0;
 
+      ctx.fillStyle = element.color;
+
       if(element.x == "1/4") {
+        //Left menu
         posX = ((ctx.canvas.width / 4)  - element.width);
+
+        ctx.font = "36px Pixel";
+        ctx.fillText("Player 1", 75, 50);
+        ctx.fillText("Player 2", 75, 200);
+        
+        ctx.font = "12px Pixel";
+        ctx.fillText("Lives : 0", 50, 100);
+        ctx.fillText("Lives : 0", 50, 250);
+        ctx.fillText("Score : "+player1Score, 200, 100);
+        ctx.fillText("Score : "+player2Score, 200, 250);
       }
       if(element.x == "3/4") {
+        //Right menu
         posX = (((ctx.canvas.width / 4) * 3)  - element.width);
+
+        ctx.font = "24px Pixel";
+        ctx.fillText("Niveau : 0", posX+75, 50);
+        ctx.fillText("Score : 999999", posX+75, 100);
       }
       if(element.height == "") {
         height = ctx.canvas.height;
       }
 
-      ctx.fillStyle = element.color;
       ctx.fillRect(posX, element.y, element.width, height);
+
+      
     })
   }
 }
@@ -305,9 +324,7 @@ function init(val) {
 }
 
 function animationloop(tempsEcoule) {
-  ctx.fillStyle = "rgb(0, 0, 0, 0.4)";
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
-   
+
   map.draw(ctx);
   
   if(gameScene.menu() == false && gameScene.tab() == false && gameScene.game() == true) {
