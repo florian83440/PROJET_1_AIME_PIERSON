@@ -142,3 +142,12 @@ transform: rotate(45deg);
     margin: 0 auto;
     padding: 0px 30px;
 }
+
+
+.text {
+    color: white !important;
+    width: 50%;
+    margin: 0 auto;
+    height: 300px;
+    overflow: overlay;
+}
