@@ -4,7 +4,7 @@
 }
 
 .spaceinv {
-    background: radial-gradient(black, blue);
+    background: radial-gradient(#1F282D, black);
     margin: 0;
     overflow: hidden;
     font-family: Pixel !important;
@@ -146,6 +146,16 @@ transform: rotate(45deg);
     margin: 0 auto;
     padding: 0px 30px;
 }
+
+
+.text {
+    color: white !important;
+    width: 50%;
+    margin: 0 auto;
+    height: 300px;
+    overflow: overlay;
+}
+
 html {
     height: 100%;
     background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
