@@ -15,7 +15,7 @@ Thomas : https://github.com/CyberLifeDev-Thomas
 
 <h3>Le projet</h3> 
 
-Ce projet à pour but de prendre en main les technologies Javascript, HTML5 et CSS3 en apssant par le developpement de jeux sur un interface web (navigateur). 
+Ce projet à pour but de prendre en main les technologies Javascript, HTML5 et CSS3 en passant par le développement de jeux sur un interface web (navigateur). 
 Ce projet se divise en plusieurs parties :
 
 <ul>
